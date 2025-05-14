@@ -4,7 +4,7 @@ export default function Slides() {
   return (
     <div
       className="h-full w-full bg-cover bg-center  "
-      style={{ backgroundImage: "url('/images/carousel/carousel.jpg')" }}
+      style={{ backgroundImage: "url('./images/carousel/carousel.jpg')" }}
     >
       <div className="mx-12 text-shadow-lg/30">
         <div>
