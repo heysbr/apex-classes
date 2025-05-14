@@ -23,7 +23,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden rounded-lg shadow-lg">
+    <div className=" relative w-full mx-auto overflow-hidden rounded-lg shadow-lg">
       {/* Carousel Images */}
       <div
         className="flex transition-transform duration-500 "

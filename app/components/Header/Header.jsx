@@ -1,6 +1,6 @@
 import React from 'react'
-import NavTop from './navtop'
-import NavBar from './navbar'
+import NavTop from './NavTop'
+import NavBar from './NavBar'
 
 
 export default function Header() {
