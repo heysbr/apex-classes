@@ -1,0 +1,70 @@
+"use client";
+
+const images = [
+  "./images/carousel/carousel.jpg",
+  "./images/carousel/carousel.jpg",
+  "./images/carousel/carousel.jpg",
+];
+
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import Slide from "./carousel.jpg";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+import "./style.css";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Image from "next/image";
+import Slides from "./Slides";
+
+export default function Carousel() {
+  return (
+    <>
+      <Swiper
+        spaceBetween={0}
+        centeredSlides={true}
+        autoplay={{
+          delay: 250000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+
+        <SwiperSlide>
+          <Image src={Slide} alt="Picture of the author" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Slide} alt="Picture of the author" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Slide} alt="Picture of the author" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Slide} alt="Picture of the author" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Slide} alt="Picture of the author" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Slide} alt="Picture of the author" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Slide} alt="Picture of the author" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={Slide} alt="Picture of the author" />
+        </SwiperSlide>
+      </Swiper>
+    </>
+  );
+}
