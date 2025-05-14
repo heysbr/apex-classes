@@ -39,30 +39,21 @@ export default function Carousel() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-
         <SwiperSlide>
-          <Image src={Slide} alt="Picture of the author" />
+          <Slides/>
         </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Slide} alt="Picture of the author" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Slide} alt="Picture of the author" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Slide} alt="Picture of the author" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Slide} alt="Picture of the author" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Slide} alt="Picture of the author" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Slide} alt="Picture of the author" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={Slide} alt="Picture of the author" />
+       <SwiperSlide>
+          <Slides/>
+        </SwiperSlide><SwiperSlide>
+          <Slides/>
+        </SwiperSlide><SwiperSlide>
+          <Slides/>
+        </SwiperSlide><SwiperSlide>
+          <Slides/>
+        </SwiperSlide><SwiperSlide>
+          <Slides/>
+        </SwiperSlide><SwiperSlide>
+          <Slides/>
         </SwiperSlide>
       </Swiper>
     </>
