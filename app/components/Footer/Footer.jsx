@@ -17,26 +17,26 @@ export default function Footer() {
                   width="auto"
                   className="mb-3 h-12"
                 />
-              </a>{" "}
+              </a>
               <p className="mb-4 max-w-sm text-gray-400 leading-loose">
                 Apex Education is an educational Institute founded with a sole
                 motto of propagating quality education for the students those
                 who are seeking career in engineering /medical entrance
                 examination.
-              </p>{" "}
+              </p>
               <div>
                 <a
                   href="#"
                   className="inline-block w-10 mr-2 p-2 bg-gray-800 hover:bg-gray-700 rounded"
                 >
                   <img src="./images/Teachers/instagram.svg" className="mx-auto" />
-                </a>{" "}
+                </a>
                 <a
                   href="#"
                   className="inline-block w-10 mr-2 p-2 bg-gray-800 hover:bg-gray-700 rounded"
                 >
                   <img src="./images/Teachers/twitter.svg" className="mx-auto" />
-                </a>{" "}
+                </a>
                 <a
                   href="#"
                   className="inline-block w-10 p-2 bg-gray-800 hover:bg-gray-700 rounded"
@@ -44,10 +44,10 @@ export default function Footer() {
                   <img src="./images/Teachers/fb.svg" className="mx-auto" />
                 </a>
               </div>
-            </div>{" "}
+            </div>
             <div className="w-full lg:w-2/3 lg:pl-16 flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold text-white">Other Links</h3>{" "}
+                <h3 className="mb-6 text-2xl font-bold text-white">Other Links</h3>
                 <ul>
                   <li className="mb-4">
                     <a
@@ -56,7 +56,7 @@ export default function Footer() {
                     >
                       One Year Courses
                     </a>
-                  </li>{" "}
+                  </li>
                   <li className="mb-4">
                     <a
                       href="/twoyear"
@@ -64,7 +64,7 @@ export default function Footer() {
                     >
                       Two Year Courses
                     </a>
-                  </li>{" "}
+                  </li>
                   <li className="mb-4">
                     <a
                       href="/foundation"
@@ -72,7 +72,7 @@ export default function Footer() {
                     >
                       Foundation
                     </a>
-                  </li>{" "}
+                  </li>
                   <li className="mb-4">
                     <a
                       href="/onlinecourse"
@@ -80,7 +80,7 @@ export default function Footer() {
                     >
                       Online Course
                     </a>
-                  </li>{" "}
+                  </li>
                   <li>
                     <a
                       href="/oneyeartarget"
@@ -90,11 +90,11 @@ export default function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>{" "}
+              </div>
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-white">
                   Important Links
-                </h3>{" "}
+                </h3>
                 <ul>
                   <li className="mb-4">
                     <a
@@ -103,7 +103,7 @@ export default function Footer() {
                     >
                       Privacy policy
                     </a>
-                  </li>{" "}
+                  </li>
                   <li className="mb-4">
                     <a
                       href="/studentzone"
@@ -111,7 +111,7 @@ export default function Footer() {
                     >
                       Student Zone
                     </a>
-                  </li>{" "}
+                  </li>
                   <li className="mb-4">
                     <a
                       href="/admissionform"
@@ -119,43 +119,43 @@ export default function Footer() {
                     >
                       Apply Online
                     </a>
-                  </li>{" "}
+                  </li>
                   <li className="mb-4">
                     <a
                       href="/"
                       aria-current="page"
-                      className="text-gray-400 hover:text-gray-300 nuxt-link-exact-active nuxt-link-active"
+                      className="text-gray-400 hover:text-gray-300"
                     >
                       Terms &amp; Conditions
                     </a>
-                  </li>{" "}
+                  </li>
                   <li>
                     <a href="/faq" className="text-gray-400 hover:text-gray-300">
                       FAQs
                     </a>
                   </li>
                 </ul>
-              </div>{" "}
+              </div>
               <div className="w-full md:w-1/3 lg:w-auto">
-                <h3 className="mb-6 text-2xl font-bold text-white text-center">
+                <h3 className="mb-6 text-2xl font-bold text-left text-white ">
                   Contact Details
-                </h3>{" "}
-                <p className="text-gray-400 hover:text-gray-300 w-30 mt-2 mb-4">
-                  <span className="font-bold">Address :-</span>CMO Office Lane,
+                </h3>
+                <p className="text-gray-400 hover:text-gray-300 w-auto mt-2 mb-4">
+                  <span className="font-bold">Address :-</span> CMO Office Lane,
                   <br /> Kabir Nagar,Durgakund, Varanasi
-                </p>{" "}
-                <p className="text-gray-400 hover:text-gray-300 w-30 text-sm mt-2 mb-2">
+                </p>
+                <p className="text-gray-400 hover:text-gray-300 w-auto text-sm mt-2 mb-2">
                   <span className="font-bold">Email ID :-</span> hallo@gamil.com
-                </p>{" "}
-                <p className="text-gray-400 hover:text-gray-300 w-30 text-sm mt-2">
+                </p>
+                <p className="text-gray-400 hover:text-gray-300 w-auto text-sm mt-2">
                   <span className="font-bold">Mobile No. :-</span> 8960972920,
                   7007519673
                 </p>
               </div>
             </div>
-          </div>{" "}
+          </div>
           <p className="lg:text-center text-sm text-gray-400 border-t border-gray-800 pt-12 mt-16">
-            © 2021. All rights reserved by{" "}
+            © 2021. All rights reserved by
             <a className="cursor-pointer">Osizone Services Pvt. Ltd</a>.
           </p>
         </div>
