@@ -9,9 +9,11 @@ export default function NavTop() {
         <Image src="./images/twitter.svg" alt="Logo" width={30} height={30} />
         <Image src="./images/instagram.svg" alt="Logo" width={30} height={30} />
         <Image src="./images/linkedin.svg" alt="Logo" width={30} height={30} />
+        <div className=" hidden md:flex items-center gap-3">
         <a>hallo@gmail.com</a>
         <a>7895561007</a>
         <a>7060292022</a>
+        </div>
       </div>
       <a className="mr-[60px] my-auto font-bold">Admin</a>
     </div>

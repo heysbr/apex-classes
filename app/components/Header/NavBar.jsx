@@ -9,7 +9,7 @@ export default function NavBar() {
         <div> <img className="h-12 my-auto rounded-xs " src="./images/apexlogo.svg" alt="Logo" /></div>
         <div className=' text-black'><MenuBar/></div>
         <div>
-            <button className='bg-red-600  rounded-t-xl rounded-bl-xl px-6 py-1.5 font-bold'>Help Desk</button>
+            <button className='hidden md:block bg-red-600  rounded-t-xl rounded-bl-xl px-6 py-1.5 font-bold'>Help Desk</button>
         </div>
        
 
