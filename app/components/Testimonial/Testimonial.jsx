@@ -47,7 +47,7 @@ export default function Testimonial() {
                 </div>
               </section>
             </div>
-            <div className="w-full lg:w-1/2 flex flex-wrap -mx-4">
+            <div className="w-full lg:w-1/2 flex flex-wrap ">
               <section>
                 <h3 className="text-3xl font-bold mb-6 text-red-700">
                   Apex Education News

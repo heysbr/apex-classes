@@ -27,7 +27,7 @@ export default function Courses() {
                 </p>
               </div>
             </div>{" "}
-            <div className="w-full lg:w-1/3 px-4">
+            <div className="mb-8 lg:mb-0 w-full lg:w-1/3 px-4">
               <div className="py-12 px-6 bg-white rounded shadow-lg text-center transform transition duration-500 hover:scale-105">
                 <span className="mb-6 inline-block p-2 rounded bg-red-100">
                    <img src="./images/WelcomeSection/svg2.svg" />
