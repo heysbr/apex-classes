@@ -6,6 +6,8 @@ import Courses from "./components/Courses/Courses";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Pedagogy from "./components/Pedagogy/Pedagogy";
 import Teachers from "./components/Teachers/Teachers";
+import Query from "./components/Query/Query";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Testimonial/>
       <Pedagogy/>
       <Teachers/>
+      <Query/>
+      <Footer/>
     </>
   );
 }
