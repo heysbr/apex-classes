@@ -19,7 +19,6 @@ import "./style.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import Image from "next/image";
 import Slides from "./Slides";
 
 export default function Carousel() {
@@ -29,7 +28,7 @@ export default function Carousel() {
         spaceBetween={0}
         centeredSlides={true}
         autoplay={{
-          delay: 250000,
+          delay: 1800,
           disableOnInteraction: false,
         }}
         pagination={{
