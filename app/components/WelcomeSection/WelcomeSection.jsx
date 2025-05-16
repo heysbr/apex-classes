@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WelcomeSection() {
   return (
-    <div className="max-h-max w-full text-black flex flex-wrap py-20 radius-for-skewed">
+    <div className="max-h-max w-full text-black flex flex-wrap py-20 px-6">
       <div className="w-full lg:w-1/2 mb-12 lg:mb-0 mt-7">
         <div className="max-w-md mx-auto">
           <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading">
@@ -57,7 +57,7 @@ export default function WelcomeSection() {
         </div>
         <div className="w-full md:w-1/2 lg:mt-20 px-4">
           <div className="mb-8 py-6 pl-6 pr-4 shadow-lg rounded-lg bg-white transform transition duration-500 hover:scale-110">
-            <span className="mb-4 inline-block p-3 rounded bg-red-100">
+            <span className="mb-4 inline-block p-3 rounded-lg bg-red-100">
               <img src="./images/WelcomeSection/svg3.svg" />
             </span>
             <h4 className="mb-2 text-2xl font-bold font-heading">
@@ -68,10 +68,10 @@ export default function WelcomeSection() {
             </p>
           </div>
           <div className="py-6 pl-6 pr-4 shadow-lg rounded-lg bg-white transform transition duration-500 hover:scale-110">
-            <span className="mb-4 inline-block p-3 rounded bg-red-100">
+            <span className="mb-4 inline-block p-3 rounded-lg bg-red-100">
               <img src="./images/WelcomeSection/svg4.svg" />
             </span>
-            <h4 className="mb-2 text-2xl font-bold font-heading">PTM</h4>{" "}
+            <h4 className="mb-2 text-2xl font-bold font-heading">PTM</h4>
             <p className="text-gray-500 leading-loose">
               Regular Parents Teacher Meeting for better understanding.
             </p>
