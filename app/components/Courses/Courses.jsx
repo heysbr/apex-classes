@@ -14,7 +14,7 @@ export default function Courses() {
             <div className="mb-8 lg:mb-0 w-full lg:w-1/3 px-4">
               <div className="py-12 px-6 bg-white rounded shadow-lg text-center transform transition duration-500 hover:scale-105">
                 <span className="mb-6 inline-block p-2 rounded-lg bg-red-100">
-                   <img src="./images/WelcomeSection/svg1.svg" />
+                   <img src="./images/WelcomeSection/svg4.svg" />
                 </span>
                 <h3 className="px-8 mb-4 text-2xl font-bold font-heading text-black">
                   IIT / JEE

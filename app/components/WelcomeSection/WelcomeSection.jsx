@@ -2,7 +2,10 @@ import React from "react";
 
 export default function WelcomeSection() {
   return (
-    <div className="max-h-max w-full text-black flex flex-wrap py-20 px-6">
+    <section >
+      <div className="py-20 bg-red-50 radius-for-skewed">
+        <div className="container mx-auto px-4">
+<div className="container max-h-max w-full text-black flex flex-wrap py-20 px-6 mx-auto">
       <div className="w-full lg:w-1/2 mb-12 lg:mb-0 mt-7">
         <div className="max-w-md mx-auto">
           <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading">
@@ -34,7 +37,7 @@ export default function WelcomeSection() {
         <div className="mb-8 lg:mb-0 w-full md:w-1/2 px-4">
           <div className="mb-8 py-6 pl-6 pr-4 shadow-lg rounded-lg bg-white transform transition duration-500 hover:scale-110">
             <span className="mb-4 inline-block p-3 rounded-lg bg-red-100">
-              <img src="./images/WelcomeSection/svg1.svg" />
+              <img src="./images/WelcomeSection/svg4.svg" height="auto" width="auto" />
             </span>
             <h4 className="mb-2 text-2xl font-bold font-heading">
               Expert Teachers
@@ -79,5 +82,13 @@ export default function WelcomeSection() {
         </div>
       </div>
     </div>
+        </div>
+      </div>
+    </section>
+
   );
 }
+
+
+
+

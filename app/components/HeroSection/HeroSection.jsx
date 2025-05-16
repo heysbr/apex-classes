@@ -23,7 +23,7 @@ import Slides from "./Slides";
 
 export default function Carousel() {
   return (
-    <>
+    <><div className="mx-auto">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -55,6 +55,7 @@ export default function Carousel() {
           <Slides/>
         </SwiperSlide>
       </Swiper>
+      </div>
     </>
   );
 }
