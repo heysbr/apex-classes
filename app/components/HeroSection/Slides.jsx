@@ -9,7 +9,7 @@ export default function Slides() {
         <div>
           <div>
             <h2 className="text-3xl mb-4 mt-12 text-shadow-white font-bold font-heading">
-              <span>Welcome to</span>
+              
               <br />
               <div className="flex">
                 <span className="text-red-600 text-8xl">APEX</span>
