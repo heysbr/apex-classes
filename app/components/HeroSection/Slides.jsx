@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Slides() {
   return (
-    <div className="h-full w-full bg-cover  bg-[url('/images/carousel/carousel.jpg')]" >
+    <div className="h-full w-full bg-cover "  style={{backgroundImage:"url('./images/carousel/carousel.jpg')"}}>
       <div className="backdrop-brightness-[35%] h-full w-full text-[20vh] content-center text-center  text-white ">
 
       <div className="mx-12 text-shadow-lg/30">

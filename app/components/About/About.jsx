@@ -8,22 +8,22 @@ import React from "react";
 
 const FeaturesData = [
   {
-    imgSrc: "/images/WelcomeSection/svg1.svg",
+    imgSrc: "./images/WelcomeSection/svg1.svg",
     heading: "Expert Teachers",
     subheading: "Teaching by excelled academicians for better results.",
   },
   {
-    imgSrc: "/images/WelcomeSection/svg1.svg",
+    imgSrc: "./images/WelcomeSection/svg1.svg",
     heading: "Doubt Clearing",
     subheading: "Daily providing Doubt Clearing Sessions for our students.",
   },
   {
-    imgSrc: "/images/WelcomeSection/svg1.svg",
+    imgSrc: "./images/WelcomeSection/svg1.svg",
     heading: "Regular Motivation",
     subheading: "Providing Regular Motivation Sessions for students.",
   },
   {
-    imgSrc: "/images/WelcomeSection/svg1.svg",
+    imgSrc: "./images/WelcomeSection/svg1.svg",
     heading: "PTM",
     subheading: "Regular Parents Teacher Meeting for better understanding.",
   },
