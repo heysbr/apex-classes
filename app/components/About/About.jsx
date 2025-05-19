@@ -42,21 +42,21 @@ export default function About() {
               <h2 className="text-3xl lg:text-5xl font-semibold text-black w-full mx-auto mb-6 bg-white">
                 Welcome to APEX
               </h2>
-              <p className="leading-loose text-black w-full lg:w-1/2 mx-auto">
+              <p className="leading-loose text-black lg:w-1/2 mx-6 text-center lg:mx-auto">
                 We focus more on grooming mental level of the students along
                 with developing their knowledge, confidence,speed,accuracy and
                 right temperament to face the exam.
               </p>
             </div>
-            <div className="flex flex-wrap gap-4  m-4 pb-4   pt-35 " id="abc">
+            <div className="flex flex-wrap gap-4  m-4 pb-4 pt-10 " >
               {FeaturesData.map((items, i) => (
                 <div
-                  className="flex justify-items-center w-full lg:w-1/5 rounded-3xl mb-30 lg:mb-0 bg-red-300 mx-auto  group hover:scale-105 duration-700 transform  hover:bg-linear-to-t from-red-500 to-blue-500"
+                  className="flex content-center w-full lg:w-1/5 rounded-xl mb-2 lg:mb-0 bg-red-300 mx-auto  group hover:scale-105 duration-700 transform  hover:bg-red-400"
                   key={i}
                 >
-                  <div className="flex flex-col flex-wrap items-center text-center p-0 px-5 pb-30 w-full ">
-                    <Image className="-translate-y-[50%] group-hover:rotate-y-180 duration-1000" src={items.imgSrc} alt={items.imgSrc} width={200} height={10}/>
-                    <h3 className="text-2xl text-black font-semibold group-hover:text-3xl duration-700">{items.heading}</h3>
+                  <div className="flex flex-col flex-wrap items-center text-center py-10  px-4 w-full center">
+                    {/* <Image className="-translate-y-[50%] group-hover:rotate-y-180 duration-1000" src={items.imgSrc} alt={items.imgSrc} width={200} height={10}/> */}
+                    <h3 className="text-2xl text-black font-semibold  duration-700">{items.heading}</h3>
                     <p className="text-lg font-normal text-black/50 mt-2">{items.subheading}</p>
                     <a className="text-black">Learn More..</a>
                   </div>
@@ -65,7 +65,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </section>
   );
 }

@@ -1,5 +1,30 @@
 import React from "react";
 
+const courses = [
+  {
+    id: 1,
+    imgSrc: "./images/WelcomeSection/svg4.svg",
+    title: "IIT / JEE",
+    description:
+      "Apex Institute gives you excellence in coaching for three elementary subjects i.e. Physics, Chemistry, and Mathematics. This course includes theory classes to cover the complete syllabus.",
+  },
+  {
+    id: 2,
+    imgSrc: "./images/WelcomeSection/svg2.svg",
+    title: "JEE Main",
+    description:
+      "This course is specially designed for class 12th pass students, providing a platform to prepare for JEE Main in a systematic manner. This course includes theory classes to cover the complete syllabus.",
+  },
+  {
+    id: 3,
+    imgSrc: "./images/WelcomeSection/svg3.svg",
+    title: "NEET",
+    description:
+      "Apex Institute provides a place to prepare for the Pre-Medical Test, NEET Exam. With changes in the exam pattern, our faculty has adapted to meet the expectations of thousands of Indian students.",
+  },
+];
+
+
 export default function Courses() {
   return (
     <section >
@@ -11,53 +36,21 @@ export default function Courses() {
             </h2>
           </div>{" "}
           <div className="flex flex-wrap -mx-4">
-            <div className="mb-8 lg:mb-0 w-full lg:w-1/3 px-4">
-              <div className="py-12 px-6 bg-white rounded shadow-lg text-center transform transition duration-500 hover:scale-105">
-                <span className="mb-6 inline-block p-2 rounded-lg bg-red-100">
-                   <img src="./images/WelcomeSection/svg4.svg" />
-                </span>
-                <h3 className="px-8 mb-4 text-2xl font-bold font-heading text-black">
-                  IIT / JEE
-                </h3>
-                <p className="text-gray-500">
-                  Apex Institute give you an excellence in the coaching for
-                  three elementary subjects i.e. Physics, Chemistry and
-                  Mathematics This course includes Theory classNamees to cover the
-                  complete syllabus.
-                </p>
-              </div>
-            </div>{" "}
-            <div className="mb-8 lg:mb-0 w-full lg:w-1/3 px-4">
-              <div className="py-12 px-6 bg-white rounded shadow-lg text-center transform transition duration-500 hover:scale-105">
-                <span className="mb-6 inline-block p-2 rounded bg-red-100">
-                   <img src="./images/WelcomeSection/svg2.svg" />
-                </span>{" "}
-                <h3 className="px-8 mb-4 text-2xl font-bold font-heading text-black">
-                  JEE Main
-                </h3>{" "}
-                <p className="text-gray-500">
-                  This course is specially designed for className 12th pass students
-                  for giving a platform to prepare for JEE Main in a systematic
-                  manner. This course includes Theory classNamees to cover the
-                  complete syllabus.
-                </p>
-              </div>
-            </div>{" "}
-            <div className="mb-8 lg:mb-0 w-full lg:w-1/3 px-4">
-              <div className="py-12 px-6 bg-white rounded shadow-lg text-center transform transition duration-500 hover:scale-105">
-                <span className="mb-6 inline-block p-2 rounded-lg bg-red-100">
-                   <img src="./images/WelcomeSection/svg3.svg" />
-                </span>{" "}
-                <h3 className="px-8 mb-4 text-2xl font-bold font-heading text-black">NEET</h3>{" "}
-                <p className="text-gray-500">
-                  Apex Institute give you a place to get ready for Pre Medical
-                  Test, NEET Exam. With the change in the pattern Medical exams
-                  our faculty has already adapted themselves to meet the
-                  expectations of thousands of students.
-                </p>
-              </div>
-            </div>
-          </div>{" "}
+  {courses.map((course) => (
+    <div key={course.id} className="mb-8 lg:mb-0 w-full lg:w-1/3 px-4 ">
+      <div className="p-6 bg-white rounded shadow-lg text-center transform transition duration-500 hover:scale-105">
+        <span className="mb-6 inline-block p-2 rounded-xl bg-red-100">
+          <img src={course.imgSrc} alt={course.title} className="w-1/2 mx-auto" />
+        </span>
+        <h3 className="px-8 mb-4 text-2xl font-bold font-heading text-black">
+          {course.title}
+        </h3>
+        <p className="text-gray-500">{course.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
           <div className="justify-center mt-4">
             <center>
               <a
