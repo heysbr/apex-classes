@@ -32,8 +32,8 @@ const FeaturesData = [
 export default function About() {
   return (
     <section>
-      <div className="py-10  bg-white bg-[url('https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] ">
-        <div className="container mx-auto backdrop-brightness-50 bg-white/10 backdrop-blur-xs shadow-lg rounded-lg p-6 ">
+      <div className=" -py-10 md:py-10  bg-white bg-[url('https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] ">
+        <div className="container  mx-auto backdrop-brightness-50 bg-white/10 backdrop-blur-xs shadow-lg rounded-lg p-6 ">
           <div>
             <div className="text-center text-white/80 text-shadow-white ">
               <p className=" text-lg font-normal mb-3 uppercase">
