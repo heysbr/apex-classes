@@ -1,3 +1,37 @@
+const MenuData1 = {
+  Home: {}, // Transformed to an empty object
+  About: {
+    "About Us": { name: "About Us", slug: "about-us" },
+    "Director's Message": { name: "Director's Message", slug: "directors-message" },
+    "Mission & Vision": { name: "Mission & Vision", slug: "mission-vision" },
+    "Teaching Methodology": { name: "Teaching Methodology", slug: "teaching-methodology" },
+    "Achievement": { name: "Achievement", slug: "achievement" },
+  },
+  Courses: {
+    "One Year Courses": { name: "One Year Courses", slug: "one-year-courses" },
+    "Two Year Courses": { name: "Two Year Courses", slug: "two-year-courses" },
+    "Pre-Medical": { name: "Pre-Medical", slug: "pre-medical" },
+    "Foundation": { name: "Foundation", slug: "foundation" },
+    "Online Course/LIVE": { name: "Online Course/LIVE", slug: "online-course-live" },
+    "Distance Learning Program (DLP)": { name: "Distance Learning Program (DLP)", slug: "distance-learning-program-dlp" },
+  },
+  Admission: {
+    "Apply Online": { name: "Apply Online", slug: "apply-online" },
+    "Admission Procedure": { name: "Admission Procedure", slug: "admission-procedure" },
+    "Term & Condition policy": { name: "Term & Condition policy", slug: "term-condition-policy" },
+    "Time Table": { name: "Time Table", slug: "time-table" },
+  },
+  Student: {
+    "Students Gallery": { name: "Students Gallery", slug: "students-gallery" },
+    "Fee Details": { name: "Fee Details", slug: "fee-details" },
+    "Privacy Policy": { name: "Privacy Policy", slug: "privacy-policy" },
+    "FAQs": { name: "FAQs", slug: "faqs" },
+    "Time Table": { name: "Time Table", slug: "time-table" },
+  },
+}
+
+
+
 const MenuData = {
   Home: [],
   About: [
@@ -29,6 +63,7 @@ const MenuData = {
     "Time Table",
   ],
 };
+
 
 export default function MenuBar() {
   return (
