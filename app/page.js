@@ -10,10 +10,12 @@ import Query from "./components/Query/Query";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 
+import apexlogo from "@/public/images/apexlogo.svg"
+
 export default function Home() {
   return (
     <>
-      <Header />
+    <Header />
       <HeroSection />
       <WelcomeSection/>
       <About/>

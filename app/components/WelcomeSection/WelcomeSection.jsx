@@ -3,25 +3,25 @@ import React from "react";
 const features = [
   {
     id: 1,
-    imgSrc: "./images/WelcomeSection/svg4.svg",
+    imgSrc: "https://images.pexels.com/photos/6981006/pexels-photo-6981006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Expert Teachers",
     description: "Teaching by excelled academicians for better results.",
   },
   {
     id: 2,
-    imgSrc: "./images/WelcomeSection/svg2.svg",
+    imgSrc: "https://images.pexels.com/photos/12886930/pexels-photo-12886930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Regular Motivation",
     description: "Providing Regular Motivation Sessions for students.",
   },
   {
     id: 3,
-    imgSrc: "./images/WelcomeSection/svg3.svg",
+    imgSrc: "https://images.pexels.com/photos/5428830/pexels-photo-5428830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Doubt Clearing",
     description: "Daily providing Doubt Clearing Sessions for our students.",
   },
   {
     id: 4,
-    imgSrc: "./images/WelcomeSection/svg4.svg",
+    imgSrc: "https://images.pexels.com/photos/6517287/pexels-photo-6517287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "PTM",
     description: "Regular Parents Teacher Meeting for better understanding.",
   },
@@ -67,7 +67,7 @@ export default function WelcomeSection() {
                 <div
                   key={feature.id}
                   className={`mb-4 lg:mb-0 w-full ${
-                    index % 2 === 0 ? "md:w-1/2" : "lg:mt-10 md:w-1/2"
+                    index % 2 === 0 ? "md:w-1/2" : "lg:mt-6 md:w-1/2"
                   } px-4`}
                 >
                   <div className="mb-8 py-6 px-6 shadow-lg rounded-lg bg-white transform transition duration-500 hover:scale-105">
