@@ -14,6 +14,7 @@ import About from "./components/Features/Features";
 export default function Home() {
   return (
     <>
+    Hello
       <HeroSection />
       <WelcomeSection/>
       <About/>
