@@ -9,7 +9,7 @@ const features = [
   },
   {
     id: 2,
-    imgSrc: "https://images.pexels.com/photos/12886930/pexels-photo-12886930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    imgSrc: "https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "Regular Motivation",
     description: "Providing Regular Motivation Sessions for students.",
   },
@@ -33,7 +33,7 @@ export default function WelcomeSection() {
       <div className="bg-red-50">
         <div className="container mx-auto py-10">
           <div className="container max-h-max w-full text-black flex flex-wrap mx-auto">
-            <div className="w-full lg:w-1/2 mb-10  mt-10">
+            <div className="w-full lg:w-1/2 mb-10  mt-10 md:my-auto">
               <div className="max-w-md mx-auto">
                 <h2 className="my-2 text-4xl lg:text-5xl font-bold font-heading">
                   Welcome to <span className="text-red-600">APEX</span>
@@ -62,7 +62,7 @@ export default function WelcomeSection() {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 flex flex-wrap mx-auto px-6">
+            <div className="w-full lg:w-1/2 flex flex-wrap mx-auto px-6 ">
               {features.map((feature, index) => (
                 <div
                   key={feature.id}
@@ -70,14 +70,14 @@ export default function WelcomeSection() {
                     index % 2 === 0 ? "md:w-1/2" : "lg:mt-6 md:w-1/2"
                   } px-4`}
                 >
-                  <div className="mb-8 py-6 px-6 shadow-lg rounded-lg bg-white transform transition duration-500 hover:scale-105">
-                    <span className="mb-4 inline-block p-3 rounded-lg bg-red-100">
-                      <img src={feature.imgSrc} alt={feature.title} className="w-1/2 mx-auto " />
+                  <div className="mb-8 flex flex-col py-6 px-6 shadow-lg rounded-lg bg-white transform transition duration-500 hover:scale-105">
+                    <span className="mb-4 inline-block p-3 rounded-lg flex-3">
+                      <img src={feature.imgSrc} alt={feature.title} className="rounded-xl" height="" />
                     </span>
-                    <h4 className="mb-2 text-2xl font-bold font-heading">
+                    <h4 className="mb-2 flex-1 text-2xl font-bold font-heading">
                       {feature.title}
                     </h4>
-                    <p className="text-gray-500 leading-loose">
+                    <p className="text-gray-500 leading-loose flex-1">
                       {feature.description}
                     </p>
                   </div>

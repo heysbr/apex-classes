@@ -10,8 +10,8 @@ const logos=
 
 export default function Member({teamMembers}) {
   return (
-    <div className="mb-6 w-full md:w-1/2 lg:w-1/3 px-3 hover:rotate-y-180 duration-1300 ease-in-out">
-              <div className="pb-8 bg-white rounded shadow text-center overflow-hidden">
+    <div className="mb-6 w-full md:w-1/2 lg:w-1/3 px-3 transition-discret blur-xl hover:blur-none duration-300 ">
+              <div className="pb-8 bg-white rounded shadow text-center">
                 <img src={teamMembers.imageUrl} alt="" className="mb-8 w-full h-64 object-cover" />
                 <h4 className="mb-2 text-2xl font-bold font-heading">
                   {teamMembers.name}

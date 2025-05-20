@@ -32,11 +32,11 @@ const MenuData = {
 
 export default function MenuBar() {
   return (
-    <div className="hidden md:flex gap-4">
+    <div className="hidden md:flex gap-4 ">
       {Object.keys(MenuData).map((key) => (
         <div key={key} className="relative group inline-block z-50">
           {/* Menu Button */}
-          <button className="text-shadow-black py-2 px-4 ">
+          <button className="text-shadow-black py-2  mx-2 px-4 rounded-2xl hover:bg-red-400 hover:text-white">
             {key}
           </button>
 
