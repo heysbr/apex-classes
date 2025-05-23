@@ -1,11 +1,25 @@
 import React from 'react'
 
-const logos=
+const logos = [
   {
-    fb:"./images/Teachers/fb.svg",
-    twitter:"./images/Teachers/twitter.svg",
-    instagram:"./images/Teachers/instagram.svg"
-  }
+    id: 1,
+    platform: "facebook",
+    link: "https://www.facebook.com",
+    icon: "./images/Teachers/fb.svg",
+  },
+  {
+    id: 2,
+    platform: "twitter",
+    link: "https://www.twitter.com",
+    icon: "./images/Teachers/twitter.svg",
+  },
+  {
+    id: 3,
+    platform: "instagram",
+    link: "https://www.instagram.com",
+    icon: "./images/Teachers/instagram.svg",
+  },
+];
 
 
 export default function Member({teamMembers}) {
@@ -18,27 +32,17 @@ export default function Member({teamMembers}) {
                 </h4>
                 <p className="text-gray-500">{teamMembers.role}</p>
                 <div className="mt-2">
-                  <a
+                  
+                  {logos.map((item,i)=>(
+                    <a key={i}
                     href="#"
                     className="inline-block w-10 mr-2 p-2 bg-red-500 hover:bg-red-600 rounded"
                   >
-                   <img src={logos.fb} className="mx-auto" />
+                   <img src={item.icon} className="mx-auto" />
                   </a>
-                  <a
-                    href="#"
-                    className="inline-block w-10 mr-2 p-2 bg-red-500 hover:bg-red-600 rounded"
-                  >
-                    <img
-                      src={logos.instagram}
-                      className="mx-auto"
-                    />
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-block w-10 p-2 bg-red-500 hover:bg-red-600 rounded"
-                  >
-                    <img src={logos.twitter} className="mx-auto" />
-                  </a>
+
+                  
+                  ))}
                 </div>
               </div>
             </div>
