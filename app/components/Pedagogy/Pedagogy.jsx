@@ -39,7 +39,7 @@ export default function Pedagogy() {
           <PedagogyPara/>
           <div className="flex flex-wrap -mx-4 -mb-8">
             {
-              PedagogyData.map((item)=>(<div className="w-full lg:w-1/2 px-4 mb-8">
+              PedagogyData.map((item)=>(<div key={item.title} className="w-full lg:w-1/2 px-4 mb-8">
               <div className="h-full p-8 bg-white rounded shadow-lg transform transition duration-500 hover:scale-105">
                 <div className="mb-6 flex items-start">
                   <span className="mr-4 inline-block p-3 rounded-full bg-red-600">
