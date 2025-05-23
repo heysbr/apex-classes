@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import MenuBar from "./MenuBar";
 import logo from "../../../public/images/apexlogo.svg"
+import Button from "../../../app/components/Button/Button";
 
 export default function NavBar() {
   return (
@@ -18,9 +19,9 @@ export default function NavBar() {
         <MenuBar />
       </div>
       <div>
-        <button className="hidden md:block bg-red-600  rounded-t-xl rounded-bl-xl px-6 py-1.5 font-bold">
+        <Button >
           Help Desk
-        </button>
+        </Button>
       </div>
     </div>
   );
