@@ -1,15 +1,7 @@
 "use client";
 
-const images = [
-  "./images/carousel/carousel.jpg",
-  "./images/carousel/carousel.jpg",
-  "./images/carousel/carousel.jpg",
-];
-
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import Slide from "./carousel.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -22,6 +14,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Slides from "./Slides";
 
 export default function Carousel() {
+  const slidesCount = 7;
+  
   return (
     <>
       <Swiper
@@ -38,22 +32,11 @@ export default function Carousel() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper mx-auto"
       >
-        <SwiperSlide>
-          <Slides/>
+       {Array.from({ length: slidesCount }, (_, index) => (
+        <SwiperSlide key={index}>
+          <Slides />
         </SwiperSlide>
-       <SwiperSlide>
-          <Slides/>
-        </SwiperSlide><SwiperSlide>
-          <Slides/>
-        </SwiperSlide><SwiperSlide>
-          <Slides/>
-        </SwiperSlide><SwiperSlide>
-          <Slides/>
-        </SwiperSlide><SwiperSlide>
-          <Slides/>
-        </SwiperSlide><SwiperSlide>
-          <Slides/>
-        </SwiperSlide>
+      ))}
       </Swiper>
     </>
   );

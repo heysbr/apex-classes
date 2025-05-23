@@ -1,9 +1,29 @@
 import React from "react";
+import Image from "next/image";
+
+import fb from "../../../public/images/facebook.svg"
+import twitter from "../../../public/images/twitter.svg"
+import linkedin from "../../../public/images/linkedin.svg"
+import apex from "../../../public/images/apexlogo.svg"
+
+
 
 export default function Footer() {
+  const socialLinks = [
+    {
+      link : fb,
+    }
+    ,{
+      link : twitter,
+    },
+    {
+      link : linkedin,
+    }
+  ]
+
   return (
     <section>
-      <div className="py-20 bg-gray-900 radius-for-skewed">
+      <div className="py-20 bg-gray-900 ">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
@@ -12,7 +32,7 @@ export default function Footer() {
                 className="inline-block mb-3 text-white text-3xl font-bold leading-none"
               >
                 <img
-                  src="./images/apexlogo.svg"
+                  src={apex}
                   alt=""
                   width="auto"
                   className="mb-3 h-12"
@@ -24,25 +44,16 @@ export default function Footer() {
                 who are seeking career in engineering /medical entrance
                 examination.
               </p>
+              
               <div>
-                <a
+                {socialLinks.map((item,i)=>(
+                   <a key={i}
                   href="#"
                   className="inline-block w-10 mr-2 p-2 bg-gray-800 hover:bg-gray-700 rounded"
                 >
-                  <img src="./images/Teachers/instagram.svg" className="mx-auto" />
+                  <Image src={item.link} className="mx-auto" width={40} alt='social links' />
                 </a>
-                <a
-                  href="#"
-                  className="inline-block w-10 mr-2 p-2 bg-gray-800 hover:bg-gray-700 rounded"
-                >
-                  <img src="./images/Teachers/twitter.svg" className="mx-auto" />
-                </a>
-                <a
-                  href="#"
-                  className="inline-block w-10 p-2 bg-gray-800 hover:bg-gray-700 rounded"
-                >
-                  <img src="./images/Teachers/fb.svg" className="mx-auto" />
-                </a>
+                ))}
               </div>
             </div>
             <div className="w-full lg:w-2/3 lg:pl-16 flex flex-wrap justify-between">
