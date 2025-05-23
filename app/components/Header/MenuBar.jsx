@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const MenuData = {
   Home: [],
   About: [
@@ -47,12 +49,12 @@ export default function MenuBar() {
               <ul>
                 {MenuData[key].map((option, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       href={option.link}
                       className="block px-4 py-2 text-gray-800 hover:bg-red-600 hover:text-white"
                     >
                       {option.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
