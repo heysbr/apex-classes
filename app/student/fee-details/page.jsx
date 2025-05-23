@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>fee details</div>
+    <div className='text-[10vh] bg-green-900 text-white text-center'>fee details</div>
   )
 }

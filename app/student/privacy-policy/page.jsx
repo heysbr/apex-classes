@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>privacy policy</div>
+   <div className='text-[10vh] bg-green-900 text-white text-center'>privacy policy</div>
   )
 }

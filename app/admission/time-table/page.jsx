@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>time table</div>
+    <div className='text-[10vh] bg-green-900 text-white text-center'>time table</div>
   )
 }

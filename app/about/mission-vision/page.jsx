@@ -3,7 +3,7 @@ import React from 'react'
 export default function page() {
   return (
     <>
-    <div>Hello from mission and vision</div>
+    <div className='text-[10vh] bg-green-900 text-white text-center'>Hello from mission and vision</div>
     </>
     )
 }
