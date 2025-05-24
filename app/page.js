@@ -10,7 +10,7 @@ import About from "./components/Features/Features";
 export default function Home() {
   return (
     <>
-      {/* <HeroSection /> */}
+      <HeroSection />
       <WelcomeSection />
       <About />
       <Courses />
