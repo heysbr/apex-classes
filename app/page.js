@@ -5,14 +5,14 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import Pedagogy from "./components/Pedagogy/Pedagogy";
 import Teachers from "./components/Teachers/Teachers";
 import Query from "./components/Query/Query";
-import About from "./components/Features/Features";
+import Features from "./components/Features/Features";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <WelcomeSection />
-      <About />
+      <Features />
       <Courses />
       <Testimonial />
       <Pedagogy />

@@ -1,9 +1,10 @@
 import React from "react";
 import PedagogyPara from "../Paragraphs/PedagogyPara";
 import Button from "../Button/Button";
+import Container from "../layout/Container";
+import PedagogyCard from "./PedagogyCard";
 
-
-const PedagogyData= [
+const PedagogyData = [
   {
     title: "Academic Team",
     description:
@@ -26,42 +27,19 @@ const PedagogyData= [
   },
 ];
 
-const icon = "./images/Pedagogy/svg1.svg";
-
 export default function Pedagogy() {
   return (
-    <section className="text-black">
-      <div className="py-20 bg-red-50 radius-for-skewed">
-        <div className="container mx-auto px-4">
-          <div className="mb-10 max-w-xl mx-auto text-center">
-            <h2 className="text-5xl font-bold text-red-700">Our Pedagogy</h2>
-          </div>{" "}
-          <PedagogyPara/>
-          <div className="flex flex-wrap -mx-4 -mb-8">
-            {
-              PedagogyData.map((item)=>(<div key={item.title} className="w-full lg:w-1/2 px-4 mb-8">
-              <div className="h-full p-8 bg-white rounded shadow-lg transform transition duration-500 hover:scale-105">
-                <div className="mb-6 flex items-start">
-                  <span className="mr-4 inline-block p-3 rounded-full bg-red-600">
-                    <img src="./images/Pedagogy/svg1.svg" className="h-6 w-6"/>
-                  </span>{" "}
-                  <h3 className="text-xl font-bold">{item.title}</h3>
-                </div>
-                <p className="text-gray-400 leading-loose">
-                  {item.description}
-                </p>
-              </div>
-            </div>))
-            }
-          </div>
-
-          <div className="justify-center items-center mt-4">
-            <center>
-              <Button>View More Courses</Button>
-            </center>
-          </div>
+    <Container>
+      <div className="p-20 text-black mx-auto px-4">
+        <div className="mb-10 max-w-xl mx-auto text-center text-5xl font-bold text-red-700">
+          Our Pedagogy
         </div>
+        <PedagogyPara />
+        <PedagogyCard PedagogyData={PedagogyData} />
+        <center className="mt-10 text-white">
+          <Button>View More Courses</Button>
+        </center>
       </div>
-    </section>
+    </Container>
   );
 }

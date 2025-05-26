@@ -3,6 +3,7 @@ import Heading from "../../../app/components/Heading/Heading";
 import Bullets from "../Paragraphs/Bullets";
 import Features from "../Paragraphs/Features";
 import FeaturesPara from "../Paragraphs/FeaturesPara";
+import Container from "../layout/Container";
 
 const BulletData =[
     {id:1,
@@ -19,9 +20,8 @@ const BulletData =[
 
 export default function WelcomeSection() {
   return (
-    <section>
-      <div className="bg-red-50">
-        <div className="container mx-auto py-10">
+
+        <Container className="container mx-auto py-10">
           <div className="container max-h-max w-full text-black flex flex-wrap mx-auto">
             <div className="w-full lg:w-1/2 mb-10  mt-10 md:my-auto">
               <div className="max-w-md mx-6">
@@ -34,8 +34,6 @@ export default function WelcomeSection() {
             </div>
             <Features/>
           </div>
-        </div>
-      </div>
-    </section>
+      </Container>
   );
 }

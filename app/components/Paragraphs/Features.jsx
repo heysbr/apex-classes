@@ -29,7 +29,7 @@ const features = [
 
 export default function Features() {
   return (
-     <div className="w-full lg:w-1/2 flex flex-wrap mx-auto px-6 ">
+     <div className="w-full lg:w-1/2 flex flex-wrap mx-auto px-6 mt-10 lg:mt-0">
               {features.map((feature, index) => (
                 <div
                   key={feature.id}

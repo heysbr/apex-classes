@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function PedagogyPara() {
   return (
-    <p className="text-white-400 leading-loose mb-6">
+    <p className="text-white-400 leading-loose mb-12 mx-auto lg:w-3/4">
             Apex is a Poineer in revolutionizing the concept of comprehensive
             approach in IIT JEE and NEET coaching classNamees in Gujrat which
             enables the students to save time and efforts. This in turn enables
