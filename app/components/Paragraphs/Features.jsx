@@ -37,7 +37,7 @@ export default function Features() {
                     index % 2 === 0 ? "md:w-1/2" : "lg:mt-6 md:w-1/2"
                   } px-4`}
                 >
-                  <div className="mb-8 flex flex-col py-6 px-6 shadow-lg rounded-lg bg-white transform transition duration-500 hover:scale-105">
+                  <div className="mb-8 flex flex-col py-6 px-6 shadow-lg hover:shadow-2xl rounded-lg bg-white transform transition duration-500 hover:scale-105">
                     <span className="mb-4 inline-block p-3 rounded-lg flex-3">
                       <img src={feature.imgSrc} alt={feature.title} className="rounded-xl"/>
                     </span>
