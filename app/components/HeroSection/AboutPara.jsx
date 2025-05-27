@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FeaturesPara() {
+export default function AboutPara() {
   return (
     <p className="mb-6 text-gray-500 leading-loose ">
       We focus more on grooming mental level of the students along with

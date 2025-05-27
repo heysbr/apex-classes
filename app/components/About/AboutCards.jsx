@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-export default function Features({features}) {
+export default function AboutCards({features}) {
   return (
     <div className="w-full lg:w-1/2 flex flex-wrap mx-auto px-6 mt-10 lg:mt-0">
       {features.map((feature, index) => (

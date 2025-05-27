@@ -1,5 +1,5 @@
-import HeroSection from "./components/HeroSection/HeroSection";
-import WelcomeSection from "./components/WelcomeSection/WelcomeSection";
+import Carousel from "./components/HeroSection/Carousel";
+import About from "./components/About/About";
 import Courses from "./components/Courses/Courses";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Pedagogy from "./components/Pedagogy/Pedagogy";
@@ -10,8 +10,8 @@ import Features from "./components/Features/Features";
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <WelcomeSection />
+      <Carousel />
+      <About />
       <Features />
       <Courses />
       <Testimonial />

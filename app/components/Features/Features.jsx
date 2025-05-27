@@ -1,8 +1,4 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-// import { FeaturesData } from '@/app/api/data';
-// import { Icon } from "@iconify/react";
 
 import React from "react";
 import FeatureCard from "./FeatureCard";
@@ -30,7 +26,7 @@ const FeaturesData = [
   },
 ];
 
-export default function About() {
+export default function Features() {
   return (
     <section>
       <div className="py-1 bg-[url('https://images.pexels.com/photos/733856/pexels-photo-733856.jpeg?')]">
@@ -38,10 +34,10 @@ export default function About() {
           <div>
             <div className="text-center text-white/80 text-shadow-white ">
               <p className=" text-lg font-normal mb-3 uppercase">
-                Features
+                Welcome to APEX
               </p>
               <h2 className="text-3xl lg:text-5xl font-semibold  w-full mx-auto mb-6 ">
-                Welcome to APEX
+                Features
               </h2>
               <p className="leading-loose lg:w-1/2 mx-6 text-center lg:mx-auto">
                 We focus more on grooming mental level of the students along

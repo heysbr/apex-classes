@@ -1,8 +1,8 @@
 import React from "react";
-import Heading from "../../../app/components/Heading/Heading";
-import Bullets from "../Paragraphs/Bullets";
-import Features from "../Paragraphs/Features";
-import FeaturesPara from "../Paragraphs/FeaturesPara";
+import Heading from "../../components/Heading/Heading";
+import Bullets from "./Bullets";
+import AboutCards from "./AboutCards";
+import AboutPara from "../HeroSection/AboutPara";
 import Container from "../layout/Container";
 
 const BulletData =[
@@ -50,21 +50,21 @@ const features = [
   },
 ];
 
-export default function WelcomeSection() {
+export default function About() {
   return (
 
-        <Container className="container mx-auto py-10">
-          <div className="container max-h-max w-full text-black flex flex-wrap mx-auto">
+        <Container >
+          <div className="container max-h-max w-full text-black flex flex-wrap mx-auto bg-white">
             <div className="w-full lg:w-1/2 mb-10  mt-10 md:my-auto">
               <div className="max-w-md mx-6">
                 <Heading>
-                  Welcome to <span className="text-red-600">APEX</span>
+                   <span className="text-red-600">About</span> Section
                 </Heading>
-                <FeaturesPara/>
+                <AboutPara/>
                 <Bullets BulletData={BulletData}/>
               </div>
             </div>
-            <Features features={features} /> 
+            <AboutCards features={features} /> 
           </div>
       </Container>
   );

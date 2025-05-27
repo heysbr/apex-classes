@@ -1,5 +1,5 @@
 import React from "react";
-import ApexPara from "../../../app/components/Paragraphs/ApexPara";
+import ApexPara from "../About/ApexPara";
 import Button from "../Button/Button";
 
 export default function Slides() {

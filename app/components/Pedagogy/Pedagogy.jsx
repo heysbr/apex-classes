@@ -1,5 +1,5 @@
 import React from "react";
-import PedagogyPara from "../Paragraphs/PedagogyPara";
+import PedagogyPara from "./PedagogyPara";
 import Button from "../Button/Button";
 import Container from "../layout/Container";
 import PedagogyCard from "./PedagogyCard";

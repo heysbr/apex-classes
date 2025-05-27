@@ -1,13 +1,12 @@
-import React from 'react'
-import Container from '../components/layout/Container'
-import WelcomeSection from '../components/WelcomeSection/WelcomeSection'
-import Features from '../components/Paragraphs/Features'
+import React from "react";
+import Features from "../components/Features/Features";
+import About from "../../app/components/About/About";
 
 export default function page() {
-  return (<>
-          <WelcomeSection />
-          <Features />
-  </>
-
-  )
+  return (
+    <>
+      <About />
+      <Features />
+    </>
+  );
 }
