@@ -53,7 +53,7 @@ export default function About() {
   return (
 
         <Container >
-          <div className="container max-h-max w-full text-black flex flex-wrap mx-auto ">
+          <div className="container w-full text-black flex flex-wrap mx-auto ">
             <div className="w-full lg:w-1/2 mb-10  mt-10 md:my-auto">
               <div className="max-w-md mx-6">
                 <p className="my-2 text-4xl lg:text-5xl font-bold font-heading">
