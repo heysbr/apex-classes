@@ -11,7 +11,7 @@ export default function NavBar() {
       <div>
         <Link href="/">
         <Image
-          className="h-12 my-auto rounded-xs block shrink-0"
+          className=" my-auto rounded-md block "
           src={logo}
           alt="Logo"
           width={250}

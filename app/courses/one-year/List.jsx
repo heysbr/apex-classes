@@ -10,7 +10,7 @@ import Image from "next/image";
           <div className="flex-shrink-0">
             <Image src={tick} height={30} alt="tick"></Image>
           </div>
-          <p className=" ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+          <p className=" ml-3 text-sm leading-5 ">
             {item.description}
           </p>
         </li>
@@ -21,12 +21,12 @@ import Image from "next/image";
 
 export default function List({data, children}) {
   return (
-    <div class="mt-8">
-      <div class="flex items-center">
-        <h4 class="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+    <div className="mt-8">
+      <div className="flex items-center">
+        <h4 className="flex-shrink-0 pr-4 text-lg leading-5 tracking-wider font-semibold uppercase text-indigo-600">
           {children}
         </h4>
-        <div class="flex-1 border-t-2 border-gray-200"></div>
+        <div className="flex-1 border-t-2 border-indigo-600"></div>
       </div>
       <JeeMainsBullets data={data} />
     </div>
