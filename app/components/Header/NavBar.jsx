@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import MenuBar from "./MenuBar";
-import logo from "../../../public/images/apexlogo.svg"
-import Button from "../../../app/components/Button/Button";
+import logo from "../Assests/images/apexlogo.svg"
+import Button from "../../components/Button/Button";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -15,6 +15,7 @@ export default function NavBar() {
           src={logo}
           alt="Logo"
           width={250}
+          height={500}
           />
           </Link>
       </div>

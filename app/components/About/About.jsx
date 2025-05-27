@@ -1,5 +1,4 @@
 import React from "react";
-import Heading from "../../components/Heading/Heading";
 import Bullets from "./Bullets";
 import AboutCards from "./AboutCards";
 import AboutPara from "../HeroSection/AboutPara";
@@ -57,9 +56,9 @@ export default function About() {
           <div className="container max-h-max w-full text-black flex flex-wrap mx-auto ">
             <div className="w-full lg:w-1/2 mb-10  mt-10 md:my-auto">
               <div className="max-w-md mx-6">
-                <Heading>
-                   <span className="text-red-600">About</span> Section
-                </Heading>
+                <p className="my-2 text-4xl lg:text-5xl font-bold font-heading">
+                   <span className="text-red-600 ">About</span> Section
+                </p>
                 <AboutPara/>
                 <Bullets BulletData={BulletData}/>
               </div>

@@ -42,12 +42,11 @@ export default function MenuBar() {
           {/* Menu Button */}
           <Link className="text-shadow-black py-2 mx-2 px-4 rounded-2xl hover:bg-red-400 hover:text-white" href={key==="Home"?"/":key.toLowerCase()}>
             {key}
-            
           </Link>
 
           {/* Dropdown Menu */}
           {MenuData[key].length > 0 && (
-            <div className="absolute w-60 hidden group-hover:block bg-white border border-gray-200 rounded-md shadow-lg">
+            <div className="absolute mt-1 w-60 hidden group-hover:block bg-white border border-gray-200 rounded-md shadow-lg">
               <ul>
                 {MenuData[key].map((option, index) => (
                   <li key={index}>
