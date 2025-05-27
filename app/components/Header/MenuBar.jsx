@@ -40,7 +40,7 @@ export default function MenuBar() {
       {Object.keys(MenuData).map((key) => (
         <div key={key} className="relative group inline-block z-50">
           {/* Menu Button */}
-          <Link className="text-shadow-black py-2 mx-2 px-4 rounded-2xl hover:bg-red-400 hover:text-white" href={key==="Home"?"/":key.toLowerCase()}>
+          <Link className="text-shadow-black py-2 mx-2 px-4 rounded-2xl hover:bg-red-400 hover:text-white" href={key==="Home"?"/":""}>
             {key}
           </Link>
 

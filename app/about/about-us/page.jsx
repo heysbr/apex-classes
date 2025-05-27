@@ -1,7 +1,12 @@
-export default function AboutUS() {
+import React from "react";
+import Features from "../../components/Features/Features";
+import About from "../../components/About/About"
+
+export default function page() {
   return (
     <>
-      <div className='text-[10vh] bg-green-900 text-white text-center'>Hello About Us</div>
+      <About />
+      <Features />
     </>
   );
 }

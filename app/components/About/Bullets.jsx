@@ -6,8 +6,8 @@ export default function Bullets({ BulletData }) {
   return (
     <ul className="text-gray-500 font-bold ">
       {BulletData.map((item, i) => (
-        <li className="flex mb-4" key={item.id}>
-          <Image src={tick} className="mr-1"  alt=" "/>
+        <li className="flex mb-4 gap-1" key={item.id}>
+          <Image src={tick} alt=""/>
           <span>{item.para}</span>
         </li>
       ))}
