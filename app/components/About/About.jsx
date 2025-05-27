@@ -54,7 +54,7 @@ export default function About() {
   return (
 
         <Container >
-          <div className="container max-h-max w-full text-black flex flex-wrap mx-auto bg-white">
+          <div className="container max-h-max w-full text-black flex flex-wrap mx-auto ">
             <div className="w-full lg:w-1/2 mb-10  mt-10 md:my-auto">
               <div className="max-w-md mx-6">
                 <Heading>
