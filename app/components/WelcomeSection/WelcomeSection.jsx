@@ -18,6 +18,38 @@ const BulletData =[
 
 ]
 
+
+const features = [
+  {
+    id: 1,
+    imgSrc:
+      "https://images.pexels.com/photos/6981006/pexels-photo-6981006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Expert Teachers",
+    description: "Teaching by excelled academicians for better results.",
+  },
+  {
+    id: 2,
+    imgSrc:
+      "https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Regular Motivation",
+    description: "Providing Regular Motivation Sessions for students.",
+  },
+  {
+    id: 3,
+    imgSrc:
+      "https://images.pexels.com/photos/5428830/pexels-photo-5428830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Doubt Clearing",
+    description: "Daily providing Doubt Clearing Sessions for our students.",
+  },
+  {
+    id: 4,
+    imgSrc:
+      "https://images.pexels.com/photos/6517287/pexels-photo-6517287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "PTM",
+    description: "Regular Parents Teacher Meeting for better understanding.",
+  },
+];
+
 export default function WelcomeSection() {
   return (
 
@@ -32,7 +64,7 @@ export default function WelcomeSection() {
                 <Bullets BulletData={BulletData}/>
               </div>
             </div>
-            <Features/>
+            <Features features={features} /> 
           </div>
       </Container>
   );

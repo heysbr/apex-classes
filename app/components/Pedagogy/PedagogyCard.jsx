@@ -9,7 +9,7 @@ export default function PedagogyCard({PedagogyData}) {
                 <div className="mb-6 flex items-start">
                   <span className="mr-4 inline-block p-3 rounded-full bg-red-600">
                     <img src="./images/Pedagogy/svg1.svg" className="h-6 w-6" />
-                  </span>{" "}
+                  </span>
                   <h3 className="text-xl font-bold">{item.title}</h3>
                 </div>
                 <p className="text-gray-400 leading-loose">
