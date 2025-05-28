@@ -4,7 +4,7 @@ import Image from "next/image";
 
  function JeeMainsBullets({ data }) {
   return (
-    <ul className="mt-8 lg:grid lg:col-gap-8 lg:row-gap-5">
+    <ul className="mt-8 col-gap-8 lg:row-gap-5">
       {data.map((item, i) => (
         <li className="flex items-start lg:col-span-1" key={i}>
           <div className="flex-shrink-0">
