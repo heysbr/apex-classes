@@ -1,5 +1,4 @@
 import React from "react";
-import JeeMainsBullets from "./List";
 import List from "./List";
 
 const NeetData = [
@@ -106,14 +105,14 @@ const JeeAdvanceData = [
 export default function page() {
   return (
     <section className="p-10 text-black ">
-      <div className=" p-4  lg:m-20 lg:p-20 rounded-xl bg-red-100">
+      <div className=" p-4 lg:m-20 lg:p-20 rounded-xl bg-red-100">
         <h3 className="text-2xl leading-8 font-extrabold  sm:text-3xl sm:leading-9">
           IIT-JEE
         </h3>
         <List data={JeeMainsData}>JEE Main</List>
         <List data={JeeAdvanceData}>JEE Advance</List>
       </div>
-      <div className="p-4 mt-10 lg:m-20 lg:p-20 rounded-xl bg-red-100 shadow-2xl">
+      <div className="p-4 mt-10 lg:m-20 lg:p-20 rounded-xl bg-red-100">
         <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 ">
           NEET/AIIMS
         </h3>

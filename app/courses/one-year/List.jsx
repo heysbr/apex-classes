@@ -10,7 +10,7 @@ import Image from "next/image";
           <div className="flex-shrink-0">
             <Image src={tick} height={30} alt="tick"></Image>
           </div>
-          <p className=" ml-3 text-sm leading-5 ">
+          <p className=" ml-3 text-sm leading-5 my-auto">
             {item.description}
           </p>
         </li>
