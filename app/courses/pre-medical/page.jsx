@@ -52,7 +52,7 @@ const AimsData = [
 export default function Page() {
   return (
     <section className="p-10 text-black ">
-          <div className="p-4 mt-10 lg:m-20 lg:p-20 rounded-xl bg-red-100">
+          <div className="p-4 mt-10 lg:m-20 lg:p-20 rounded-xl bg-white border shadow-2xl ">
             <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 ">
               NEET/AIIMS
             </h3>

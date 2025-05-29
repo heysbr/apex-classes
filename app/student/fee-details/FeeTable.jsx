@@ -1,8 +1,8 @@
 const FeeTable = ({data, children, index}) => {
-  return (<div className="flex m-20 w-[70vw]">
-  <div className="mb-4 mr-6 py-4 px-6 rounded text-red-500 bg-red-50 font-bold h-fit">
+  return (<div className="flex m-20 max-w-[70vw]">
+  {/* <div className="mb-4 mr-6 py-4 px-6 rounded text-red-500 bg-red-50 font-bold h-fit">
           {index}
-        </div>
+        </div> */}
         <div>
 
     <h3 className="mb-4 text-xl lg:text-2xl font-bold">{children}</h3>

@@ -44,7 +44,7 @@ const states= [
 
 export default function ContactDetails() {
   return (
-    <div className="p-4 border-b rounded-t-lg bg-red-500 w-1/3 mx-auto m-10">
+<div className="p-4 border-b rounded-t-lg bg-red-500 lg:w-1/2 mx-auto m-10">
       <h2 className="text-2xl text-white">Addresses & Contact Details</h2>
       <div className="bg-gray-50 mt-4 -mb-3 -ml-3 -mr-3">
         <InputField label="Address Line No. 1" name="address1" />

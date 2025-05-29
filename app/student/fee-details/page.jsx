@@ -31,9 +31,9 @@ const courseData = [
 
 export default function page() {
   return (
-    <div className="mb-8 flex justify-center items-start">
+    
+    <div className="mb-8 flex-col justify-items-center mx-auto w-full">
       
-      <div>
         <FeeTable data={courseData} index={1}>
           Courses for JEE Main &amp; Advance Cum CBSE &amp; NTSE / KVPY &amp; National / International Olympiads
         </FeeTable>
@@ -46,7 +46,7 @@ export default function page() {
         <FeeTable data={courseData} index={4}>
           Distance Learning Programme for JEE Main & Advance Cum CBSE & NTSE / KVPY & National / International Olympiads
         </FeeTable>
-      </div>
+
     </div>
   );
 }

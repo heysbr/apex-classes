@@ -104,21 +104,27 @@ const JeeAdvanceData = [
 
 export default function page() {
   return (
-    <section className="p-10 text-black ">
-      <div className=" p-4 lg:m-20 lg:p-20 rounded-xl bg-red-100">
-        <h3 className="text-2xl leading-8 font-extrabold  sm:text-3xl sm:leading-9">
+    <section className="mx-auto lg:p-20">
+      <h2 className="text-3xl lg:text-4xl text-red-500 font-bold font-heading text-center mx-auto mt-10 mb-5">
+        One Year Course
+      </h2>
+
+      <div className="overflow-hidden rounded-xl shadow-2xl bg-white p-10 border ">
+        <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 mb-4">
           IIT-JEE
         </h3>
         <List data={JeeMainsData}>JEE Main</List>
         <List data={JeeAdvanceData}>JEE Advance</List>
       </div>
-      <div className="p-4 mt-10 lg:m-20 lg:p-20 rounded-xl bg-red-100">
-        <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 ">
+      <div className="overflow-hidden rounded-xl shadow-2xl bg-white p-10 my-10 border">
+        <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 mb-4 ">
           NEET/AIIMS
         </h3>
         <List data={AimsData}>NEET</List>
         <List data={NeetData}>AIIMS</List>
       </div>
+
     </section>
   );
 }
+ 

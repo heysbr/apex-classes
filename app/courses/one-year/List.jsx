@@ -4,9 +4,9 @@ import Image from "next/image";
 
  function JeeMainsBullets({ data }) {
   return (
-    <ul className="mt-8 col-gap-8 lg:row-gap-5">
+    <ul className="">
       {data.map((item, i) => (
-        <li className="flex items-start lg:col-span-1" key={i}>
+        <li className="flex items-start lg:col-span-1 mb-4" key={i}>
           <div className="flex-shrink-0">
             <Image src={tick} height={30} alt="tick"></Image>
           </div>
@@ -21,9 +21,9 @@ import Image from "next/image";
 
 export default function List({data, children}) {
   return (
-    <div className="mt-8">
-      <div className="flex items-center">
-        <h4 className="flex-shrink-0 pr-4 text-lg leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+    <div className="mb-5">
+      <div className="flex items-center mb-4">
+        <h4 className="flex-shrink-0 pr-3 text-lg leading-5 tracking-wider font-semibold uppercase text-indigo-600">
           {children}
         </h4>
         <div className="flex-1 border-t-2 border-indigo-600"></div>
