@@ -22,10 +22,10 @@ const vision = [
 export default function page() {
   return (
     <>
-      <section class="py-20 text-black">
-        <div class="container mx-auto px-4">
-          <div class="max-w-4xl mx-auto">
-            <h2 class="mb-16 text-3xl lg:text-4xl font-bold font-heading text-center text-red-500 border-b-4  ">
+      <section className="py-20 text-black">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="mb-16 text-3xl lg:text-4xl font-bold font-heading text-center text-red-500 border-b-4  ">
               Mission &amp; Vision
             </h2>
               <VisionCard data={vision} />

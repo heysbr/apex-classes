@@ -1,3 +1,4 @@
+import Button from "../../components/Button/Button";
 import AcademicDetails from "./AcademicDetails";
 import BasicDetails from "./BasicDetails";
 import ContactDetails from "./ContactDetails";
@@ -11,6 +12,10 @@ import PersonalDetails from "./PersonalDetails";
     <PersonalDetails/>
     <ContactDetails/>
     <AcademicDetails/>
+    <div className="flex gap-10 justify-center m-10 text-white">
+      <Button>Reset</Button>
+      <Button>Submit</Button>
+      </div>    
   </>
   );
 };

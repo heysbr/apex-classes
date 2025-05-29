@@ -6,53 +6,28 @@ import InputField from "../../components/Form/InputField";
 export default function PersonalDetails() {
   return (
     <div className="p-4 border-b rounded-t-lg bg-red-500 w-1/3 mx-auto m-10">
-      <h2 className="text-2xl text-white">Basic Details</h2>
+      <h2 className="text-2xl text-white">Personal Details</h2>
       <div className="bg-gray-50 mt-4 -mb-3 -ml-3 -mr-3">
-        <Dropdown
-          label="Select Stream"
-          options={["Engineering", "Medical"]}
-          required
-        />
-        <Dropdown
-          label="Current Class"
-          options={["Engineering", "Medical"]}
-          required
-        />
-        <Dropdown
-          label="Current Class"
-          options={["Engineering", "Medical"]}
-          required
-        />
-        <Dropdown
-          label="Course Name"
-          options={["Engineering", "Medical"]}
-          required
-        />
+
+        <InputField label="Candidate's Name" name="candidate-name" />
+        <Dropdown label="Gender" options={["Male", "Female","Other"]} required/>
+        <InputField label="Date of Birth as per School " name="dob" />
         <RadioGroup
-          label="Preferred Study Medium"
+          label="Nationality"
           name="study-medium"
           options={[
-            { label: "English", value: "english" },
-            { label: "Hindi", value: "hindi" },
+            { label: "Indian", value: "Indian" },
+            { label: "Other", value: "Other" },
           ]}
           required
         />
         <Dropdown
-          label="Study Centre Choice"
-          options={["Centre 1", "Centre 2"]}
+          label="Category"
+          options={["Engineering", "Medical"]}
           required
         />
-        <Dropdown
-          label="Test Centre Choice"
-          options={["Centre 1", "Centre 2"]}
-          required
-        />
-        <RadioGroup
-          label="Are you Bansalite?"
-          name="bansalite"
-          options={[{ label: "Yes", value: "yes" },{ label: "No", value: "no" },]}
-        />
-        <InputField label="BC Roll No" name="bc-roll-no" />
+         <InputField label="Father's Name" name="father-name" />
+         <InputField label="Mother's Name" name="mother-name" />        
       </div>
     </div>
   )
