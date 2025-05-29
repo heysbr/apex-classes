@@ -14,7 +14,7 @@ export default function TimeTable() {
           <th  className="w-1/3 text-right py-3 px-4 uppercase font-semibold text-sm">
             Class Schedule
           </th>
-          <th class="text-left py-3 px-4 uppercase font-semibold text-sm"></th>
+          <th className="text-left py-3 px-4 uppercase font-semibold text-sm"></th>
         </tr>
       </thead>
       <tbody  className="text-gray-700">
