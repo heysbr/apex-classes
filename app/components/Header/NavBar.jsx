@@ -15,7 +15,7 @@ export default function NavBar() {
           src={logo}
           alt="Logo"
           width={250}
-          height={500}
+          // height={500}
           />
           </Link>
       </div>
@@ -23,7 +23,7 @@ export default function NavBar() {
         <MenuBar />
       </div>
       <div>
-        <Button link={"/student/faqs"}>
+        <Button link={""}>
           Help Desk
         </Button>
       </div>

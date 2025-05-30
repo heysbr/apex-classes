@@ -1,3 +1,5 @@
+import Button from "../../components/Button/Button";
+import Link from "next/link";
 import React from "react";
 
 const studentGalleryImages = [
@@ -49,13 +51,8 @@ export default function page() {
           <div className="flex flex-wrap mb-8 -mx-4">
             {studentGalleryImages.map((item, i)=> <StudentGalleryCard data={item} key={i}/>)}
             </div>
-          <div className="text-center">
-            <a
-              href="#"
-              className="inline-block py-2 px-6 leading-loose rounded-l-xl rounded-t-xl bg-red-600 hover:bg-red-700 text-gray-50 font-bold"
-            >
-              View More Images
-            </a>
+          <div className="justify-items-center">
+            <Button link={"/student/gallery"}>View More Images</Button>
           </div>
         </div>
       </div>

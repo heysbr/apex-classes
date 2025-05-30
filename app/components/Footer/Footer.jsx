@@ -1,23 +1,24 @@
 import React from "react";
 import Image from "next/image";
 
-import fb from "../../../public/images/facebook.svg"
-import twitter from "../../../public/images/twitter.svg"
-import linkedin from "../../../public/images/linkedin.svg"
-import apex from "../../../public/images/apexlogo.svg"
+import fb from "../../components/Assests/images/social/facebook.svg";
+import twitter from "../../components/Assests/images/social/twitter.svg";
 
+import linkedin from "../../components/Assests/images/social/linkedin.svg";
 
+import apex from "../../components/Assests/images/apexlogo.svg";
+import Link from "next/link";
 
 export default function Footer() {
-  const socialLinks = [
+   const socialLinks = [
     {
-      link : fb,
+      link : "https://www.facebook.com/heysbr", imgLink: fb
     }
     ,{
-      link : twitter,
+      link : "https://www.instagram.com/code.prynsh/", imgLink: twitter
     },
     {
-      link : linkedin,
+      link : "https://www.linkedin.com/in/priyanshu-sabaar/", imgLink: linkedin
     }
   ]
 
@@ -27,38 +28,45 @@ export default function Footer() {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
-              <a
-                href="#"
-                className="inline-block mb-3 text-white text-3xl font-bold leading-none"
-              >
-                <img
+              <Link href="/">
+                <Image
+                  className=" my-auto rounded-md block "
                   src={apex}
-                  alt=""
-                  width="auto"
-                  className="mb-3 h-12"
+                  alt="Logo"
+                  width={250}
+                  // height={500}
                 />
-              </a>
-              <p className="mb-4 max-w-sm text-gray-400 leading-loose">
+              </Link>
+
+              <p className="mb-4 max-w-sm mt-8 text-gray-400 leading-loose">
                 Apex Education is an educational Institute founded with a sole
                 motto of propagating quality education for the students those
                 who are seeking career in engineering /medical entrance
                 examination.
               </p>
-              
+
               <div>
-                {socialLinks.map((item,i)=>(
-                   <a key={i}
-                  href="#"
-                  className="inline-block w-10 mr-2 p-2 bg-gray-800 hover:bg-gray-700 rounded"
-                >
-                  <Image src={item.link} className="mx-auto" width={40} alt='social links' />
-                </a>
+                {socialLinks.map((item, i) => (
+                  <div
+                    className="inline-block w-10 mr-2 p-2 bg-gray-800 hover:bg-gray-700 rounded" key={i}
+                  >
+                    <Link href={item.link} >
+                      <Image
+                        src={item.imgLink}
+                        className="mx-auto"
+                        width={40}
+                        alt="social links"
+                      />
+                    </Link>
+                  </div>
                 ))}
               </div>
             </div>
             <div className="w-full lg:w-2/3 lg:pl-16 flex flex-wrap justify-between">
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
-                <h3 className="mb-6 text-2xl font-bold text-white">Other Links</h3>
+                <h3 className="mb-6 text-2xl font-bold text-white">
+                  Other Links
+                </h3>
                 <ul>
                   <li className="mb-4">
                     <a
@@ -141,7 +149,10 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href="/faq" className="text-gray-400 hover:text-gray-300">
+                    <a
+                      href="/faq"
+                      className="text-gray-400 hover:text-gray-300"
+                    >
                       FAQs
                     </a>
                   </li>

@@ -13,8 +13,8 @@ import PersonalDetails from "./PersonalDetails";
     <ContactDetails/>
     <AcademicDetails/>
     <div className="flex gap-10 justify-center m-10 text-white">
-      <Button>Reset</Button>
-      <Button>Submit</Button>
+      <Button link={"/admission/apply-online"}>Reset</Button>
+      <Button link={"/"}>Submit</Button>
       </div>    
   </>
   );
