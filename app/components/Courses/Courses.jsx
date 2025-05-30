@@ -41,8 +41,8 @@ export default function Courses() {
           </div>
           <CoursesCard courses={courses}/>
           <div className="justify-center mt-4">
-            <center>
-              <Button>View More Courses</Button>
+            <center className="mt-8">
+              <Button link={"/courses/one-year"}>View More Courses</Button>
             </center>
           </div>
         </div>

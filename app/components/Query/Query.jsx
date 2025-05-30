@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Query() {
   return (
-    <section className="py-10 bg-red-50 text-black">
+    <section className="py-10 bg-red-50 text-black query-section">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center justify-center -mx-4">
           <div className="mb-16 lg:mb-0 max-w-2xl lg:w-1/2 px-4">
@@ -13,12 +14,12 @@ export default function Query() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Pellentesque efficitur nisl sodales egestas lobortis.
             </p>{" "}
-            <a
-              href="#"
+            <Link
+              href="/"
               className="inline-block py-2 px-6 bg-red-600 hover:bg-red-700 text-white font-bold leading-loose transition duration-250 rounded-l-xl rounded-t-xl"
             >
               Get Started
-            </a>
+            </Link>
           </div>{" "}
           <div className="w-full lg:w-1/2 px-4">
             <div className="max-w-sm mx-auto lg:mr-0 lg:ml-auto">
@@ -58,15 +59,15 @@ export default function Query() {
                 </form>{" "}
                 <p className="text-xs text-gray-400">
                   <span>Already have an account?</span>{" "}
-                  <a href="#" className="text-red-500">
+                  <Link href="#" className="text-red-500">
                     Sign In
-                  </a>
+                  </Link>
                 </p>
               </div>{" "}
               <p className="text-center text-gray-400">
-                <a href="#" className="text-red-600 hover:text-red-700">
+                <Link href="#" className="text-red-600 hover:text-red-700" >
                   Police privacy
-                </a>{" "}
+                </Link>{" "}
                 <span>and</span>{" "}
                 <a href="#" className="text-red-600 hover:text-red-700">
                   Terms of Use

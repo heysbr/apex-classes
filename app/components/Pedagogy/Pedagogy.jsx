@@ -37,7 +37,7 @@ export default function Pedagogy() {
         <PedagogyPara />
         <PedagogyCard PedagogyData={PedagogyData} />
         <center className="mt-10 text-white">
-          <Button>View More Courses</Button>
+          <Button link={"/courses/one-year"}>View More Courses</Button>
         </center>
       </div>
     </Container>

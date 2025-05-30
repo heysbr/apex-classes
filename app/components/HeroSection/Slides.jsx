@@ -15,7 +15,7 @@ export default function Slides() {
           </h2>
           <ApexPara />
           <center>
-            <Button>Join Us</Button>
+            <Button link={"/admission/apply-online"}>Join Us</Button>
           </center>
         </div>
       </div>

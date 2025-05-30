@@ -23,7 +23,7 @@ export default function NavBar() {
         <MenuBar />
       </div>
       <div>
-        <Button >
+        <Button link={"/student/faqs"}>
           Help Desk
         </Button>
       </div>
