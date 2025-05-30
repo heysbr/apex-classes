@@ -1,42 +1,109 @@
-import React from 'react'
+"use client";
+import Link from "next/link";
+import React from "react";
+import { useState } from "react";
+
+const About=[
+    { label: "About Us", link: "/about/about-us" },
+    { label: "Director's Message", link: "/about/directors-message" },
+    { label: "Mission & Vision", link: "/about/mission-vision" },
+    { label: "Teaching Methodology", link: "/about/teaching-methodology" },
+    { label: "Achievement", link: "/about/achievement" },
+  ];
+
+  const Student= [
+    { label: "Students Gallery", link: "/student/gallery" },
+    { label: "Fee Details", link: "/student/fee-details" },
+    { label: "Privacy Policy", link: "/student/privacy-policy" },
+    { label: "FAQs", link: "/student/faqs" },
+    { label: "Time Table", link: "/student/time-table" },
+  ]
+  
+  const  Admission =  [
+    { label: "Apply Online", link: "/admission/apply-online" },
+    { label: "Admission Procedure", link: "/admission/procedure" },
+    { label: "Term & Condition Policy", link: "/admission/terms-conditions" },
+    { label: "Time Table", link: "/admission/time-table" },
+  ]
+
+  const Courses= [
+    { label: "One Year Courses", link: "/courses/one-year" },
+    { label: "Two Year Courses", link: "/courses/two-year" },
+    { label: "Pre-Medical", link: "/courses/pre-medical" },
+    { label: "Foundation", link: "/courses/foundation" },
+    { label: "Online Course/LIVE", link: "/courses/online-live" },
+    { label: "Distance Learning Program (DLP)", link: "/courses/dlp" },
+  ]
 
 export default function NavBarV2() {
-  return (
     
+const [active1, setActive1] = useState(false);
+const [active2, setActive2] = useState(false);
+const [active3, setActive3] = useState(false);
+const [active4, setActive4] = useState(false);
+const [active5, setActive5] = useState(false);
 
-<nav className="bg-white border-gray-200 dark:bg-gray-900">
-  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-    </a>
-    <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span className="sr-only">Open main menu</span>
-        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul>
+  return (
+    <div> <div onClick={()=>setActive1(!active1)}>show</div> 
+
+    {active1 && (
+      <div>
+      <div>Home</div>
+      
+      <div onClick={()=>setActive2(!active2)}>About</div>
+      {active2 && (<ul className="bg-red-500 p-3 w-fit"> {About.map((item, i)=> <li key={i}>{item.label}</li> )} </ul>)}
+
+      <div onClick={()=>setActive3(!active3)}>Courses</div>
+      {active3 && (<ul className="bg-red-500 p-3 w-fit"> {Courses.map((item, i)=> <li key={i}>{item.label}</li> )} </ul>)}
+
+      <div onClick={()=>setActive4(!active4)}>Admission</div> 
+      {active4 && (<ul className="bg-red-500 p-3 w-fit"> {Admission.map((item, i)=> <li key={i}>{item.label}</li> )} </ul>)}
+
+      <div onClick={()=>setActive5(!active5)}>Student</div>
+      {active5 && (<ul className="bg-red-500 p-3 w-fit"> {Student.map((item, i)=> <li key={i}>{item.label}</li> )} </ul>)}
+
     </div>
+    )
+  }
   </div>
-</nav>
-
   )
 }
+
+//   return (
+//     <>
+//       <div className="flex flex-col gap-4">
+//         {Object.keys(MenuData).map((key) => (
+//           <div key={key} className="inline-block">
+//             {/* Menu Button */}
+//             <Link
+//               className="text-shadow-black py-2 mx-2 px-4 rounded-2xl hover:bg-red-400 hover:text-white"
+//               href={key === "Home" ? "/" : ""} 
+//             >
+//               {key}
+//             </Link>
+
+//             {/* Dropdown Menu */}
+//             {Active&&(
+//             MenuData[key].length > 0 && (
+//               <div className="  mt-1 w-60 bg-white border border-gray-200 rounded-md shadow-lg">
+//                 <ul>
+//                   {MenuData[key].map((option, index) => (
+//                     <li key={index}>
+//                       <Link
+//                         href={option.link}
+//                         className="block px-4 py-2 text-gray-800 hover:bg-red-600 hover:text-white"
+//                       >
+//                         {option.label}
+//                       </Link>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+//             )
+//             )}
+//           </div>
+//         ))}
+//       </div>
+//     </>
+//   );
+// }

@@ -7,7 +7,8 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between items-center h-[70px] px-[30px] bg-white">
+    <div className=" flex-col lg:flex-row flex justify-between items-center bg-white">
+      
       <div>
         <Link href="/">
         <Image
@@ -19,14 +20,17 @@ export default function NavBar() {
           />
           </Link>
       </div>
-      <div className=" text-black">
+
+      <div className=" text-black z-50 bg-white w-full">
         <MenuBar />
       </div>
+
       <div>
         <Button link={"/student/faqs"}>
           Help Desk
         </Button>
       </div>
+
     </div>
   );
 }
