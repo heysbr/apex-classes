@@ -12,9 +12,8 @@ export default function StudentCard() {
               src={comma}
               className="mb-4 text-red-600 h-10"
               alt="comma"
-              height={80}
-              width="auto"
-               style={{ width: '80px', height: '80px' }} 
+              
+               style={{ width: '50px', height: '50px' }} 
             />
             <h3 className="mb-6 text-2xl lg:text-2xl">
               Maecenas nibh purus, pharetra ac felis sed, elementum molestie
