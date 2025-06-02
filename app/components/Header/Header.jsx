@@ -8,7 +8,6 @@ export default function Header() {
   return (
     <div className='shadow-xl'>
     <NavTop/>
-    {/* <NavBarV2/> */}
     <NavBar/>
     </div>
   )
