@@ -7,24 +7,25 @@ const FeaturesData = [
   {
     imgSrc: "./images/WelcomeSection/svg1.svg",
     heading: "Expert Teachers",
-    subheading: "Teaching by excelled academicians for better results.",
+    subheading: "Our experienced educators simplify learning with innovative methods, clear explanations, and practical examples, ensuring every student.s",
   },
   {
     imgSrc: "./images/WelcomeSection/svg1.svg",
     heading: "Doubt Clearing",
-    subheading: "Daily providing Doubt Clearing Sessions for our students.",
+    subheading: "We promptly address every question with detailed answers and examples, ensuring students overcome their difficulties, clarify concepts.",
   },
   {
     imgSrc: "./images/WelcomeSection/svg1.svg",
     heading: "Motivation",
-    subheading: "Providing Regular Motivation Sessions for students.",
+    subheading: "Our mentors provide regular guidance, inspiring students to stay focused, overcome challenges, and achieve their goals with confidence.",
   },
   {
     imgSrc: "./images/WelcomeSection/svg1.svg",
     heading: "PTM",
-    subheading: "Regular Parents Teacher Meeting for better understanding.",
+    subheading: "Parent-teacher meetings foster collaboration by discussing student progress, identifying strengths, addressing challenges, and ensuring.",
   },
 ];
+
 
 export default function Features() {
   return (

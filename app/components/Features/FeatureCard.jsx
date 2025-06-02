@@ -10,7 +10,7 @@ export default function FeatureCard({FeaturesData}) {
                 >
                   <div className="flex flex-col flex-wrap items-center text-center py-10  px-4 w-full center">
                     <h3 className="text-2xl text-black font-semibold  duration-700">{items.heading}</h3>
-                    <p className="text-lg font-normal text-black/50 mt-2">{items.subheading}</p>
+                    <p className="text-md font-normal text-black/50 mt-2">{items.subheading}</p>
                     <a className="text-black">Learn More..</a>
                   </div>
                 </div>
