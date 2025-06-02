@@ -34,12 +34,12 @@ const courses = [
 export default function Courses() {
   return (
     <Container>
-      <div className="py-20  radius-for-skewed">
+      <div className="py-15">
         <div >
-          <div className="mb-16 text-center text-4xl lg:text-5xl font-bold text-red-700">
+          <div className="mb-10 text-center text-4xl lg:text-5xl font-bold text-red-700">
               Popular Courses
           </div>
-          <CoursesCard courses={courses}/>
+          <CoursesCard courses={courses}/>  
           <div className="justify-center mt-4">
             <center className="mt-8">
               <Button link={"/courses/one-year"}>View More Courses</Button>

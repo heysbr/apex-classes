@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function CoursesCard({courses}) {
   return (
-    <div className="flex flex-wrap -mx-4">
+    <div className="flex flex-wrap mx-4">
             {courses.map((course) => (
               <div
                 key={course.id}
                 className="mb-8 lg:mb-0 w-full lg:w-1/3 px-4 "
               >
-                <div className="p-6 bg-white rounded-xl shadow-lg text-center transform transition duration-500 hover:scale-105">
+                <div className="p-6 bg-white rounded-xl shadow-lg text-center transform transition duration-500 scale-90 hover:scale-95">
                   <span className="mb-6 inline-block p-2 rounded-xl">
                     <img
                       src={course.imgSrc}
