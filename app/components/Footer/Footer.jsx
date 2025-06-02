@@ -24,7 +24,7 @@ export default function Footer() {
 
   return (
     <section>
-      <div className="py-20 bg-gray-900 ">
+      <div className="py-10 bg-gray-900 ">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
@@ -176,7 +176,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p className="lg:text-center text-sm text-gray-400 border-t border-gray-800 pt-12 mt-16">
+          <p className="lg:text-center text-sm text-gray-400 border-t pt-3 border-gray-800 ">
             © 2021. All rights reserved by
             <a className="cursor-pointer">Osizone Services Pvt. Ltd</a>.
           </p>
