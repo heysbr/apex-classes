@@ -4,7 +4,7 @@ import Header from "../app/components/Header/Header";
 import "./globals.css";
 import { Roboto } from 'next/font/google';
 
-import { Merriweather_Sans } from '@next/font/google';
+import { Merriweather_Sans } from 'next/font/google';
 
 const merriweather = Merriweather_Sans({
   subsets: ['latin'], // Specify subsets
