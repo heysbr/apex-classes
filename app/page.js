@@ -6,7 +6,6 @@ import Pedagogy from "./components/Pedagogy/Pedagogy";
 import Teachers from "./components/Teachers/Teachers";
 import Query from "./components/Query/Query";
 import Features from "./components/Features/Features";
-import NavBarV2 from "./components/Header/NavBarV2";
 
 export default function Home() {
   return (
