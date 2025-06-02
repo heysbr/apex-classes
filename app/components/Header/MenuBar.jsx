@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { useState } from "react";
+
 
 const MenuData = {
   Home: [],
@@ -34,22 +34,17 @@ const MenuData = {
   ],
 };
 
-function navActive(){
-  
-}
 
 export default function MenuBar() {
 
-  const [active, setActive] = useState(false);
-  
   return (
     <>
-      <div className="flex flex-col lg:flex-row flex-nowrap gap-4">
+      <div className="hidden lg:flex flex-col lg:flex-row flex-nowrap gap-4">
         {Object.keys(MenuData).map((key) => (
           <div key={key} className="relative group inline-block z-50">
             {/* Menu Button */}
             <Link
-              className="text-shadow-black py-2 mx-2 px-4 rounded-2xl hover:bg-red-400 hover:text-white"
+              className="text-shadow-black py-2 mx-2 px-4 rounded-xl hover:bg-red-400 hover:text-white"
               href={key === "Home" ? "/" : ""}
             >
               {key}

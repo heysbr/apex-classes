@@ -7,25 +7,24 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className=" flex-col lg:flex-row flex justify-between items-center bg-white">
+    <div className=" lg:flex-row flex justify-between items-center bg-white">
       
       <div>
-        <Link href="/">
+        <Link href="/" >
         <Image
-          className=" my-auto rounded-md block "
+          className=" rounded block mx-4 my-3"
           src={logo}
           alt="Logo"
           width={250}
-          // height={500}
           />
           </Link>
       </div>
 
-      <div className=" text-black z-50 bg-white w-full">
+      <div className=" text-black  bg-white ">
         <MenuBar />
       </div>
 
-      <div>
+      <div className="hidden lg:flex">
         <Button link={"/student/faqs"}>
           Help Desk
         </Button>

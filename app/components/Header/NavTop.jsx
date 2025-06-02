@@ -35,7 +35,7 @@ export default function NavTop() {
         <Link href={"tel:+917060292022"}>7060292022</Link>
         </div>
       </div>
-      <a className="mr-[60px] my-auto font-bold">Admin</a>
+      <a className="mr-[60px] my-auto font-bold hidden lg:flex ">Admin</a>
     </div>
   );
 }
