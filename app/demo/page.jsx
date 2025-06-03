@@ -1,12 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
+"use client"
+import MobMenu from "../components/Header/New/MobMenu";
+import { Menus } from "../components/Header/New/utils";
 
 export default function PrefooterBanner() {
   return (
-    <Link href={""}
-      className="btn "
-    >
-hell world
-    </Link>
+    <MobMenu Menus={Menus} />
   );
 }
