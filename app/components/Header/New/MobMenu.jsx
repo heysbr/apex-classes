@@ -53,7 +53,7 @@ export default function MobMenu({ Menus }) {
 
       <div className="">
         <motion.div
-          className="lg:hidden absolute z-10 left-0 right-0 overflow-y-auto h-fit bg-[#18181A] backdrop-blur text-white p-6 pb-20"
+          className="lg:hidden absolute z-10 left-0 right-0 overflow-y-auto h-full bg-[#18181A] backdrop-blur text-white p-6 pb-20"
           initial={{ x: "-100%" }}
           animate={{ x: isOpen ? "0%" : "-100%" }}
         >
