@@ -81,13 +81,17 @@ export default function MobMenu({ Menus }) {
                       variants={subMenuDrawer}
                       className="ml-5"
                     >
-                      {subMenu.map(({ id,name, icon: Icon }) => (
+                      {subMenu.map(({ name, icon: Icon, desc }) => (
                         <li
-                          key={id}
-                          className="p-2 flex flex-row items-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
+                          key={name}
+                          className="p-2 flex flex-row  hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                         >
+                          <Link href={desc} className="flex flex-row items-center gap-x-2.5">
                           <Icon size={17} />
+                          
                           {name}
+                          </Link>
+                          
                         </li>
                       ))}
                     </motion.ul>
