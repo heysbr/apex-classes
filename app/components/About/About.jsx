@@ -1,22 +1,13 @@
-import React from "react";
 import Bullets from "./Bullets";
 import AboutCards from "./AboutCards";
 import AboutPara from "../HeroSection/AboutPara";
 import Container from "../layout/Container";
 
-const BulletData =[
-    {id:1,
-        para:"Teaching by excelled academicians for better results"
-    },
-    {id:2,
-        para:"Regular Motivation Sessions for students"
-    },
-    {id:3,
-        para:"Daily Doubt Clearing Sessions"
-    },
-
-]
-
+const BulletData = [
+  { id: 1, para: "Teaching by excelled academicians for better results" },
+  { id: 2, para: "Regular Motivation Sessions for students" },
+  { id: 3, para: "Daily Doubt Clearing Sessions" },
+];
 
 const features = [
   {
@@ -51,20 +42,19 @@ const features = [
 
 export default function About() {
   return (
-
-        <Container >
-          <div className="container w-full text-black flex flex-wrap mx-auto ">
-            <div className="w-full lg:w-1/2 mb-10  mt-10 md:my-auto">
-              <div className="max-w-md mx-6">
-                <p className="my-2 text-4xl lg:text-5xl font-bold font-heading">
-                   <span className="text-red-600 ">About</span> Section
-                </p>
-                <AboutPara/>
-                <Bullets BulletData={BulletData}/>
-              </div>
-            </div>
-            <AboutCards features={features} /> 
+    <Container>
+      <div className="container w-full text-black flex flex-wrap mx-auto ">
+        <div className="w-full lg:w-1/2 mb-10  mt-10 md:my-auto">
+          <div className="max-w-md mx-6">
+            <p className="my-2 text-4xl lg:text-5xl font-bold font-heading">
+              <span className="text-red-600 ">About</span> Section
+            </p>
+            <AboutPara />
+            <Bullets BulletData={BulletData} />
           </div>
-      </Container>
+        </div>
+        <AboutCards features={features} />
+      </div>
+    </Container>
   );
 }

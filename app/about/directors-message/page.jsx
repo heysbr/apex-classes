@@ -15,15 +15,15 @@ export default function page() {
                       alt=""
                       className="h-full mx-auto object-cover  rounded-lg mt-6 transform transition duration-500 hover:scale-105"
                     />
-                  </span>{" "}
+                  </span>
                   <h2 className="mb-6 text-4xl font-bold">
                     Director's <span className="text-red-600">Message</span>
-                  </h2>{" "}
-                  <p className="text-gray-500 font-bold italic">
+                  </h2>
+                  <p className="text-gray-800 font-bold italic text-xl">
                     "A dreams doesn't become reality through magic;
                     <br />
-                    &nbsp;it takes sweat; determination and hard work"
-                  </p>{" "}
+                    &nbsp;it takes sweat, determination and hard work"
+                  </p>
                   <p className="text-gray-500 leading-loose text-justify pt-2">
                     Success is the sum of small efforts, repeated day in and day
                     out. There exist limitless opportunities and possibilities
@@ -31,17 +31,17 @@ export default function page() {
                     have to be great to start, but you have to start to be
                     great. Probably a year from now you would be wishing that
                     you would have started today. So, let's start today.
-                  </p>{" "}
+                  </p>
                   <p className="text-gray-500 leading-loose text-justify">
                     Firstly, I would like to communicate my gratitude for the
-                    belief you have shown in Apex classNamees. I appreciate you all
-                    for talking up the challenge to get into India's best
+                    belief you have shown in Apex classNamees. I appreciate you
+                    all for talking up the challenge to get into India's best
                     institutions. At Apex, we strieve to maintain the highest
                     standards of education, to make the dreams of our students
                     come true. We encourage the vibrant and energetic students
                     to develop their confidence and love for learning for a
                     bright future in the competitive era.
-                  </p>{" "}
+                  </p>
                   <p className="text-gray-500 leading-loose text-justify">
                     Apex stays in front of the success curve by knowing what
                     factors drive success in the competitive exams. Our results
@@ -49,18 +49,20 @@ export default function page() {
                     believe that challenges are what make life interesting &amp;
                     overcoming them is what makes life meaningful. Every
                     challenge always seems impossible until it's done.
-                  </p>{" "}
+                  </p>
                   <p className="text-gray-500 leading-loose text-justify">
                     Today, Apex and aspiring students are walking together to
                     redefine success with confidence. I assure you a good
                     learning experience here.
-                  </p>{" "}
-                  <p className="text-gray-500 font-bold italic pt-2">
+                  </p>
+                  <p className="text-gray-700  text-xl font-bold italic pt-2 mt-1">
                     "An unexamined life is not worth living Dream big, Dream
                     often Pursue the intangible &amp; achieve the incredible"
-                  </p>{" "}
-                  <br />{" "}
-                  <h4 className="mt-2 text-xl font-bold pr-4">Sandeep Mishra</h4>{" "}
+                  </p>
+                  <br />
+                  <h4 className="mt-2 text-xl font-bold pr-4">
+                    Sandeep Mishra
+                  </h4>
                   <h4 className=" text-lg ">B.tech, IIT-BHU</h4>
                 </div>
               </div>

@@ -41,7 +41,7 @@ const studentGalleryImages = [
 export default function page() {
   return (
     <section>
-      <div className="py-20 bg-gray-50 radius-for-skewed">
+      <div className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="mb-8 md:mb-16 max-w-lg mx-auto text-center">
             <h2 className="mb-6 text-4xl text-red-500 lg:text-5xl font-bold font-heading border-b-2 border-gray-100">

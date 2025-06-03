@@ -37,7 +37,7 @@ const faqs = [
 export default function page() {
   return (
     <div className="max-w-screen-xl mx-auto p-8">
-      <h2 className="text-4xl font-extrabold leading-9  border-b-2 border-gray-100 text-gray-900 mb-12">
+      <h2 className="text-4xl font-extrabold leading-9 mt-10  text-center border-b-2 border-gray-100 text-gray-900 pb-4 mb-8">
         FAQs
       </h2>{" "}
       <ul className="flex items-start gap-8 flex-wrap">
@@ -49,8 +49,8 @@ export default function page() {
 
 function FaqsBullets({ data }) {
   return (
-    <li className="w-2/5">
-      <p className="text-lg font-medium leading-6 text-gray-900">
+    <li className="w-full">
+      <p className="text-lg font-bold leading-6 text-gray-900">
         {data.question}
       </p>
       <div className="mt-2">

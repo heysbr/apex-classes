@@ -65,7 +65,7 @@ export default function Query() {
                 </p>
               </div>{" "}
               <p className="text-center text-gray-400">
-                <Link href="#" className="text-red-600 hover:text-red-700" >
+                <Link href="#" className="text-red-600 hover:text-red-700">
                   Police privacy
                 </Link>{" "}
                 <span>and</span>{" "}

@@ -1,20 +1,16 @@
 import React from "react";
 import comma from "../Assests/images/Testimonial/svg1.svg"
 import Image from "next/image";
+import { MessageSquareQuote } from "lucide-react";
 
 export default function StudentCard() {
   return (
-    <div className="py-10 radius-for-skewed">
+    <div className="py-5 ">
       <div className="container mx-auto px-2">
         <div className="max-w-6xl p-4 flex flex-wrap justify-center items-center">
           <div className="w-full pr-4  p-4 hover:border border-red-600 hover:rounded-3xl hover:shadow-xl duration-400 rounded-3xl ">
-            <Image
-              src={comma}
-              className="mb-4 text-red-600 h-10"
-              alt="comma"
-              
-               style={{ width: '50px', height: '50px' }} 
-            />
+            
+            <MessageSquareQuote className="size-10 my-8"/>
             <h3 className="mb-6 text-2xl lg:text-2xl">
               Maecenas nibh purus, pharetra ac felis sed, elementum molestie
               urna. Nunc at arcu non ipsum.
