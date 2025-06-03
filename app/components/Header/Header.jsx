@@ -1,15 +1,14 @@
 "use client";
 import React from "react";
 import NavTop from "./NavTop";
-import NavBar from "./NavBar";
-import MobileNav from "./New/MobileNav";
+import { Menus } from "../../components/Header/New/utils";
+import MobMenu from "./New/MobMenu";
 
 export default function Header() {
   return (
     <div>
       <NavTop/>
-      <NavBar/>
-      {/* <MobileNav active={true}/> */}
+      <MobMenu Menus={Menus}/>
     </div>
   );
 }
