@@ -68,23 +68,23 @@ export default function MobMenu({ Menus }) {
                     onClick={() => setClicked(isClicked ? null : i)}
                   >
                     {name}
-                    {hasSubMenu && (
+                    {(hasSubMenu>0) && (
                       <ChevronDown
                         className={`ml-auto ${isClicked && "rotate-180"} `}
                       />
                     )}
                   </span>
-                  {hasSubMenu && (
+                  {(hasSubMenu>0) && (
                     <motion.ul
                       initial="exit"
                       animate={isClicked ? "enter" : "exit"}
                       variants={subMenuDrawer}
                       className="ml-5"
                     >
-                      {subMenu.map(({ name, icon: Icon }) => (
+                      {subMenu.map(({ id,name, icon: Icon }) => (
                         <li
-                          key={name}
-                          className="p-2 flex-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
+                          key={id}
+                          className="p-2 flex flex-row items-center hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                         >
                           <Icon size={17} />
                           {name}
