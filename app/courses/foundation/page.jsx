@@ -28,11 +28,11 @@ const CardsData = [
     desc: "Physics, Chemistry, Biology, Astronomy organized by IAPT.",
   },
   {
-    title: "Indian National Olympiad (INO) examination",
+    title: "Indian National Olympiad (INO)",
     desc: "The eligible students from stage one can participate In INO in respective subjects.",
   },
   {
-    title: "Orientation-Cum-Selection Camps (OCSC)",
+    title: "Orientation Cum Selection Camps (OCSC)",
     desc: "For these camps, about 35 students in each subject will be selected from INO on performance basis.",
   },
   {
@@ -47,13 +47,22 @@ const CardsData = [
 
 export default function page() {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <FoundationPara data={ParaData}>
-          Pre-Foundation Course (For Students of Class VIII, IX &amp; X)
-        </FoundationPara>
-        <FoundationCards data={CardsData}/>
+    <section className="container mx-auto">
+      <div className="m-2 lg:mb-18">
+        <h2 className="text-3xl lg:text-4xl text-red-500 font-bold font-heading text-center mx-auto mt-10 mb-5">
+          Foundation Course (For Class VIII, IX &amp; X)
+        </h2>
+        <div className="overflow-hidden rounded-xl shadow-2xl bg-white p-10 border border-gray-200">
+          <FoundationPara data={ParaData}/>
+          <FoundationCards data={CardsData}/>
+        </div>
       </div>
+      
+        
     </section>
   );
 }
+
+
+
+

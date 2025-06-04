@@ -1,5 +1,5 @@
-import React from 'react'
-import List from '../one-year/List'
+import React from "react";
+import List from "../one-year/List";
 
 const NeetData = [
   {
@@ -51,14 +51,19 @@ const AimsData = [
 
 export default function Page() {
   return (
-    <section className="p-10 text-black ">
-          <div className="p-4 mt-10 lg:m-20 lg:p-20 rounded-xl bg-white border shadow-2xl ">
-            <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 ">
-              NEET/AIIMS
-            </h3>
-            <List data={AimsData}>NEET</List>
-            <List data={NeetData}>AIIMS</List>
-          </div>
-        </section>
-  )
+    <section className="container mx-auto">
+      <div className="m-2 lg:mb-18">
+        <h2 className="text-3xl lg:text-4xl text-red-500 font-bold font-heading text-center mx-auto mt-10 mb-5">
+          Pre Medical Year Course
+        </h2>
+        <div className="overflow-hidden rounded-xl shadow-2xl bg-white p-10 border border-gray-200">
+          <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 mb-4 ">
+            NEET/AIIMS
+          </h3>
+          <List data={NeetData}>NEET</List>
+          <List data={AimsData}>AIMS</List>
+        </div>
+      </div>
+    </section>
+  );
 }

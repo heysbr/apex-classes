@@ -1,14 +1,6 @@
-import React from "react";
-
-
-
-const table=[
-    {"":"",}
-]
-
 export default function TimeTable() {
   return (
-    <table  className=" bg-white border mb-5">
+    <table  className="hidden lg:table bg-white border mb-5">
       <thead  className="bg-red-800 text-white">
         <tr>
           <th  className="w-1/3 text-right  uppercase font-semibold text-sm">

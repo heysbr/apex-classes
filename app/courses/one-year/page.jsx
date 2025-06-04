@@ -1,4 +1,3 @@
-import React from "react";
 import List from "./List";
 
 const NeetData = [
@@ -104,26 +103,24 @@ const JeeAdvanceData = [
 
 export default function page() {
   return (
-    <section className="mx-auto lg:p-20">
-      <h2 className="text-3xl lg:text-4xl text-red-500 font-bold font-heading text-center mx-auto mt-10 mb-5">
-        One Year Course
-      </h2>
-
-      <div className="overflow-hidden rounded-xl shadow-2xl bg-white p-10 border ">
+    <section className="mx-auto container">
+      <div className="m-2">
+      <h2 className="text-3xl lg:text-4xl text-red-500 font-bold font-heading text-center mx-auto mt-10 mb-5">One Year Course</h2>
+      <div className="overflow-hidden rounded-xl shadow-2xl bg-white p-10 border border-gray-200 ">
         <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 mb-4">
           IIT-JEE
         </h3>
         <List data={JeeMainsData}>JEE Main</List>
         <List data={JeeAdvanceData}>JEE Advance</List>
       </div>
-      <div className="overflow-hidden rounded-xl shadow-2xl bg-white p-10 my-10 border">
+      <div className="overflow-hidden rounded-xl shadow-2xl bg-white p-10 my-10 border border-gray-200">
         <h3 className="text-2xl leading-8 font-extrabold sm:text-3xl sm:leading-9 mb-4 ">
           NEET/AIIMS
         </h3>
         <List data={AimsData}>NEET</List>
         <List data={NeetData}>AIIMS</List>
       </div>
-
+      </div>   
     </section>
   );
 }

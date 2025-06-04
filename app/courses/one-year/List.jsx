@@ -1,6 +1,6 @@
 import React from "react";
-import tick from "../../components/Assests/images/WelcomeSection/tick.svg";
-import Image from "next/image";
+import { CircleCheckBig } from "lucide-react";
+
 
  function JeeMainsBullets({ data }) {
   return (
@@ -8,7 +8,7 @@ import Image from "next/image";
       {data.map((item, i) => (
         <li className="flex items-start lg:col-span-1 mb-4" key={i}>
           <div className="flex-shrink-0">
-            <Image src={tick} height={30} alt="tick"></Image>
+            <CircleCheckBig/>
           </div>
           <p className=" ml-3 text-sm leading-5 my-auto">
             {item.description}
