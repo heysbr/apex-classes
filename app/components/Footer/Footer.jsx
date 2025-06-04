@@ -176,7 +176,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p className="lg:text-center text-sm text-gray-400 border-t pt-3 border-gray-800 ">
+          <p className="text-center text-sm text-gray-400  border-t mt-3 pt-3 border-gray-800 ">
             © 2021. All rights reserved by
             <a className="cursor-pointer">Osizone Services Pvt. Ltd</a>.
           </p>
