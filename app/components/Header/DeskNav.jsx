@@ -35,7 +35,7 @@ const MenuData = {
 };
 
 
-export default function MenuBar() {
+export default function DeskNav() {
 
   return (
     <>

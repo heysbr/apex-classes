@@ -3,12 +3,12 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
-import MenuBar from "../../../components/Header/MenuBar";
-import logo from "../../../components/Assests/images/apexlogo.svg";
-import Button from "../../../components/Button/Button";
+import MenuBar from "./DeskNav";
+import logo from "../../components/Assests/images/apexlogo.svg";
+import Button from "../Button/Button";
 import Link from "next/link";
 
-export default function MobMenu({ Menus }) {
+export default function Navbar({ Menus }) {
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(null);
   const toggleDrawer = () => {
@@ -30,20 +30,11 @@ export default function MobMenu({ Menus }) {
   return (
     <>
       <div className=" lg:flex-row flex justify-between items-center bg-white">
-        <div>
-          <Link href="/">
-            <Image
-              className=" rounded block mx-4 my-3"
-              src={logo}
-              alt="Logo"
-              width={250}
-            />
-          </Link>
-        </div>
+        <div> <Link href="/"> <Image className=" rounded block mx-4 my-3" src={logo} alt="Logo" width={250} /> </Link> </div>
         <MenuBar />
-        <div className="hidden lg:flex">
-          <Button link={"/student/faqs"}>Help Desk</Button>
-        </div>
+        <div className="hidden lg:flex"> <Button link={"/student/faqs"}>Help Desk</Button> </div>
+        
+        {/* Toggle Button for Mobile NavBar */}
         {isOpen ? (
           <X className="m-4 lg:hidden " onClick={toggleDrawer} />
         ) : (
@@ -51,6 +42,7 @@ export default function MobMenu({ Menus }) {
         )}
       </div>
 
+        {/* Mobile Navbar */}
       <div className="">
         <motion.div
           className="lg:hidden absolute z-10 left-0 right-0 overflow-y-auto h-full bg-[#18181A] backdrop-blur text-white p-6 pb-20"
@@ -68,13 +60,13 @@ export default function MobMenu({ Menus }) {
                     onClick={() => setClicked(isClicked ? null : i)}
                   >
                     {name}
-                    {(hasSubMenu>0) && (
+                    {hasSubMenu > 0 && (
                       <ChevronDown
                         className={`ml-auto ${isClicked && "rotate-180"} `}
                       />
                     )}
                   </span>
-                  {(hasSubMenu>0) && (
+                  {hasSubMenu > 0 && (
                     <motion.ul
                       initial="exit"
                       animate={isClicked ? "enter" : "exit"}
@@ -86,12 +78,14 @@ export default function MobMenu({ Menus }) {
                           key={name}
                           className="p-2 flex flex-row  hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                         >
-                          <Link href={desc} className="flex flex-row items-center gap-x-2.5" onClick={toggleDrawer}>
-                          <Icon size={17} />
-                          
-                          {name}
+                          <Link
+                            href={desc}
+                            className="flex flex-row items-center gap-x-2.5"
+                            onClick={toggleDrawer}
+                          >
+                            <Icon size={17} />
+                            {name}
                           </Link>
-                          
                         </li>
                       ))}
                     </motion.ul>

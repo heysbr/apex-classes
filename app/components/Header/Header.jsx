@@ -1,14 +1,13 @@
 "use client";
-import React from "react";
 import NavTop from "./NavTop";
-import { Menus } from "../../components/Header/New/utils";
-import MobMenu from "./New/MobMenu";
+import { Menus } from "./utils";
+import Menu from "./Menu";
 
 export default function Header() {
   return (
     <div>
       <NavTop/>
-      <MobMenu Menus={Menus}/>
+      <Menu Menus={Menus}/>
     </div>
   );
 }

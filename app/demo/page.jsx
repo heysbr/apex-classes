@@ -5,7 +5,7 @@ import { Menu, X, ChevronDown, ArrowRight, ArrowRightCircle } from "lucide-react
 import Image from "next/image";
 import logo from "../../app/components/Assests/images/apexlogo.svg"
 import Link from "next/link";
-import { Menus } from "../components/Header/New/utils";
+import { Menus } from "../components/Header/utils";
 
 
 
