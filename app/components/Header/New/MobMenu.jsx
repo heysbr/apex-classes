@@ -86,7 +86,7 @@ export default function MobMenu({ Menus }) {
                           key={name}
                           className="p-2 flex flex-row  hover:bg-white/5 rounded-md gap-x-2 cursor-pointer"
                         >
-                          <Link href={desc} className="flex flex-row items-center gap-x-2.5">
+                          <Link href={desc} className="flex flex-row items-center gap-x-2.5" onClick={toggleDrawer}>
                           <Icon size={17} />
                           
                           {name}
